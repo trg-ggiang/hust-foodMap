@@ -1,0 +1,139 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [
+    ".ua/.understandignore",
+    "apps/web/public/images/optimized/banhmi-128.webp",
+    "apps/web/public/images/optimized/banhmi-256.webp",
+    "apps/web/public/images/optimized/banhmi-512.webp",
+    "apps/web/public/images/optimized/banhmi-768.webp",
+    "apps/web/public/images/optimized/coffee-128.webp",
+    "apps/web/public/images/optimized/coffee-256.webp",
+    "apps/web/public/images/optimized/coffee-512.webp",
+    "apps/web/public/images/optimized/coffee-768.webp",
+    "apps/web/public/images/optimized/noodles-128.webp",
+    "apps/web/public/images/optimized/noodles-256.webp",
+    "apps/web/public/images/optimized/noodles-512.webp",
+    "apps/web/public/images/optimized/noodles-768.webp",
+    "apps/web/public/images/optimized/pho-128.webp",
+    "apps/web/public/images/optimized/pho-256.webp",
+    "apps/web/public/images/optimized/pho-512.webp",
+    "apps/web/public/images/optimized/pho-768.webp",
+    "apps/web/public/images/optimized/rice-128.webp",
+    "apps/web/public/images/optimized/rice-256.webp",
+    "apps/web/public/images/optimized/rice-512.webp"
+  ],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 4,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "results": [
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "outputLanguage",
+          "level": 1,
+          "line": 2
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "apps/api/test/restaurants.test.cjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 93,
+      "callGraph": [
+        {
+          "caller": "ids",
+          "callee": "fetch(`${base}/api/restaurants?${new URLSearchParams(params)}`).then",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ids",
+          "callee": "fetch",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ids",
+          "callee": "r.json",
+          "lineNumber": 67
+        },
+        {
+          "caller": "ids",
+          "callee": "response.data.map(r => r.id).sort",
+          "lineNumber": 68
+        },
+        {
+          "caller": "ids",
+          "callee": "response.data.map",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/next-env.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/next.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/postcss.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

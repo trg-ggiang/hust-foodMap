@@ -1,0 +1,164 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "apps/api/src/app.module.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "HealthController",
+          "startLine": 3,
+          "endLine": 8,
+          "methods": [
+            "health"
+          ],
+          "properties": []
+        },
+        {
+          "name": "AppModule",
+          "startLine": 10,
+          "endLine": 10,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AppModule",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 2
+      }
+    },
+    {
+      "path": "apps/api/src/create-app.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "createApp",
+          "startLine": 4,
+          "endLine": 23,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "createApp",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createApp",
+          "callee": "NestFactory.create",
+          "lineNumber": 5
+        },
+        {
+          "caller": "createApp",
+          "callee": "app.setGlobalPrefix",
+          "lineNumber": 6
+        },
+        {
+          "caller": "createApp",
+          "callee": "app.enableCors",
+          "lineNumber": 7
+        },
+        {
+          "caller": "createApp",
+          "callee": "(\n      process.env.CORS_ORIGINS || \"http://localhost:5173,http://localhost:3001\"\n    )\n      .split(\",\")\n      .map",
+          "lineNumber": 8
+        },
+        {
+          "caller": "createApp",
+          "callee": "(\n      process.env.CORS_ORIGINS || \"http://localhost:5173,http://localhost:3001\"\n    )\n      .split",
+          "lineNumber": 8
+        },
+        {
+          "caller": "createApp",
+          "callee": "origin.trim",
+          "lineNumber": 12
+        },
+        {
+          "caller": "createApp",
+          "callee": "app.useGlobalPipes",
+          "lineNumber": 14
+        },
+        {
+          "caller": "createApp",
+          "callee": "app.enableShutdownHooks",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/api/src/main.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "bootstrap",
+          "startLine": 3,
+          "endLine": 9,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "bootstrap",
+          "callee": "createApp",
+          "lineNumber": 4
+        },
+        {
+          "caller": "bootstrap",
+          "callee": "app.listen",
+          "lineNumber": 5
+        },
+        {
+          "caller": "bootstrap",
+          "callee": "Number",
+          "lineNumber": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    }
+  ]
+}

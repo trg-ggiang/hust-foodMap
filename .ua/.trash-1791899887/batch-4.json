@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/api/src/app.module.ts",
+      "type": "file",
+      "name": "app.module.ts",
+      "filePath": "apps/api/src/app.module.ts",
+      "summary": "Composes the restaurant feature with a health controller reporting API status and sample data provenance.",
+      "tags": [
+        "api-handler",
+        "catalog",
+        "nestjs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:apps/api/src/app.module.ts:AppModule",
+      "type": "class",
+      "name": "AppModule",
+      "filePath": "apps/api/src/app.module.ts",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Composes restaurant routes and the API health controller.",
+      "tags": [
+        "nestjs",
+        "dependency-injection",
+        "api-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api/src/create-app.ts",
+      "type": "file",
+      "name": "create-app.ts",
+      "filePath": "apps/api/src/create-app.ts",
+      "summary": "Creates the NestJS application with the /api prefix, configured CORS origins, strict transforming query validation, and shutdown hooks.",
+      "tags": [
+        "api-handler",
+        "catalog",
+        "nestjs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/api/src/create-app.ts:createApp",
+      "type": "function",
+      "name": "createApp",
+      "filePath": "apps/api/src/create-app.ts",
+      "lineRange": [
+        4,
+        23
+      ],
+      "summary": "Builds the configured NestJS instance with API routing, CORS, validation, and lifecycle hooks.",
+      "tags": [
+        "factory",
+        "validation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/api/src/main.ts",
+      "type": "file",
+      "name": "main.ts",
+      "filePath": "apps/api/src/main.ts",
+      "summary": "Bootstraps the API on environment-controlled host and port, reporting startup failure through stderr and process exit status.",
+      "tags": [
+        "api-handler",
+        "catalog",
+        "nestjs"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/api/src/app.module.ts",
+      "target": "file:apps/api/src/restaurants/restaurants.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api/src/app.module.ts",
+      "target": "class:apps/api/src/app.module.ts:AppModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/api/src/app.module.ts",
+      "target": "class:apps/api/src/app.module.ts:AppModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api/src/create-app.ts",
+      "target": "file:apps/api/src/app.module.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/api/src/create-app.ts",
+      "target": "function:apps/api/src/create-app.ts:createApp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/api/src/create-app.ts",
+      "target": "function:apps/api/src/create-app.ts:createApp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/api/src/main.ts",
+      "target": "file:apps/api/src/create-app.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,3285 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 11,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 11,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 11,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "apps/web/src/components/food-image.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "FoodImage",
+          "startLine": 2,
+          "endLine": 27,
+          "params": [
+            "{\n  src,\n  sizes,\n  loading = \"lazy\",\n  ...props\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FoodImage",
+          "line": 2,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FoodImage",
+          "callee": "src.match",
+          "lineNumber": 10
+        },
+        {
+          "caller": "FoodImage",
+          "callee": "[128, 256, 512, 768]\n        .map((width) => `/images/optimized/${name}-${width}.webp ${width}w`)\n        .join",
+          "lineNumber": 13
+        },
+        {
+          "caller": "FoodImage",
+          "callee": "[128, 256, 512, 768]\n        .map",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/components/primitives.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 154,
+      "nonEmptyLines": 154,
+      "functions": [
+        {
+          "name": "Modal",
+          "startLine": 12,
+          "endLine": 49,
+          "params": [
+            "{\r\n  title,\r\n  description,\r\n  open,\r\n  onOpenChange,\r\n  children,\r\n}"
+          ]
+        },
+        {
+          "name": "RestaurantFacts",
+          "startLine": 50,
+          "endLine": 66,
+          "params": [
+            "{ restaurant: r }"
+          ]
+        },
+        {
+          "name": "RestaurantSidebarCard",
+          "startLine": 67,
+          "endLine": 154,
+          "params": [
+            "{\r\n  restaurant: r,\r\n  selected,\r\n  saved,\r\n  loading = \"lazy\",\r\n  totalMinutes,\r\n  onSelect,\r\n  onSave,\r\n  highlight,\r\n  onHover,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Modal",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "RestaurantFacts",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "RestaurantSidebarCard",
+          "line": 67,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "RestaurantFacts",
+          "callee": "compactPrice",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RestaurantFacts",
+          "callee": "compactPrice",
+          "lineNumber": 54
+        },
+        {
+          "caller": "RestaurantSidebarCard",
+          "callee": "import",
+          "lineNumber": 85
+        },
+        {
+          "caller": "RestaurantSidebarCard",
+          "callee": "onHover",
+          "lineNumber": 93
+        },
+        {
+          "caller": "RestaurantSidebarCard",
+          "callee": "onHover",
+          "lineNumber": 94
+        },
+        {
+          "caller": "RestaurantSidebarCard",
+          "callee": "onHover",
+          "lineNumber": 95
+        },
+        {
+          "caller": "RestaurantSidebarCard",
+          "callee": "onHover",
+          "lineNumber": 96
+        },
+        {
+          "caller": "RestaurantSidebarCard",
+          "callee": "r.category.toLowerCase",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/discovery-map.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 469,
+      "nonEmptyLines": 467,
+      "functions": [
+        {
+          "name": "DiscoveryMap",
+          "startLine": 70,
+          "endLine": 468,
+          "params": [
+            "{\r\n  restaurants,\r\n  selected,\r\n  userCoordinate,\r\n  onLocate,\r\n  locationMessage,\r\n  onSelect,\r\n  onBounds,\r\n  onResetBounds,\r\n  notify,\r\n  hovered,\r\n  searching,\r\n  onHover,\r\n  onDetail,\r\n  onClose,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DiscoveryMap",
+          "line": 70,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useRef",
+          "lineNumber": 86
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useRef",
+          "lineNumber": 87
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useRef",
+          "lineNumber": 88
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useRef",
+          "lineNumber": 89
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useRef",
+          "lineNumber": 102
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useRef",
+          "lineNumber": 103
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useRef",
+          "lineNumber": 104
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useState",
+          "lineNumber": 107
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useState",
+          "lineNumber": 108
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useMemo",
+          "lineNumber": 118
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "restaurants.map",
+          "lineNumber": 119
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useState",
+          "lineNumber": 122
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useState",
+          "lineNumber": 125
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useState",
+          "lineNumber": 126
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useEffect",
+          "lineNumber": 127
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "getMapProvider",
+          "lineNumber": 129
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setStatus",
+          "lineNumber": 131
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setWorkerUrl",
+          "lineNumber": 132
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "provider.getStyle",
+          "lineNumber": 136
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setStatus",
+          "lineNumber": 146
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.on",
+          "lineNumber": 150
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "applyDarkMapTheme",
+          "lineNumber": 151
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setStatus",
+          "lineNumber": 153
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "labels.forEach",
+          "lineNumber": 155
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "document.createElement",
+          "lineNumber": 156
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "new Marker({ element: el })\r\n            .setLngLat(l.at as [number, number])\r\n            .addTo",
+          "lineNumber": 159
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "new Marker({ element: el })\r\n            .setLngLat",
+          "lineNumber": 159
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.on",
+          "lineNumber": 165
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.on",
+          "lineNumber": 166
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setStatus",
+          "lineNumber": 168
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.on",
+          "lineNumber": 170
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setMoved",
+          "lineNumber": 171
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.resize",
+          "lineNumber": 174
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setViewportKey",
+          "lineNumber": 175
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "observer.observe",
+          "lineNumber": 177
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "observer.disconnect",
+          "lineNumber": 179
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.remove",
+          "lineNumber": 180
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "markers.current.clear",
+          "lineNumber": 181
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useEffect",
+          "lineNumber": 186
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "restaurants.map",
+          "lineNumber": 193
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.getSource",
+          "lineNumber": 199
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "source.setData",
+          "lineNumber": 201
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.addSource",
+          "lineNumber": 203
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.addLayer",
+          "lineNumber": 210
+        },
+        {
+          "caller": "reconcile",
+          "callee": "m.isSourceLoaded",
+          "lineNumber": 218
+        },
+        {
+          "caller": "reconcile",
+          "callee": "restaurants.map",
+          "lineNumber": 228
+        },
+        {
+          "caller": "reconcile",
+          "callee": "m.querySourceFeatures",
+          "lineNumber": 229
+        },
+        {
+          "caller": "reconcile",
+          "callee": "m.getBounds().contains",
+          "lineNumber": 232
+        },
+        {
+          "caller": "reconcile",
+          "callee": "m.getBounds",
+          "lineNumber": 232
+        },
+        {
+          "caller": "reconcile",
+          "callee": "wanted.set",
+          "lineNumber": 235
+        },
+        {
+          "caller": "reconcile",
+          "callee": "eligible.has",
+          "lineNumber": 240
+        },
+        {
+          "caller": "reconcile",
+          "callee": "wanted.set",
+          "lineNumber": 241
+        },
+        {
+          "caller": "reconcile",
+          "callee": "wanted.has",
+          "lineNumber": 244
+        },
+        {
+          "caller": "reconcile",
+          "callee": "entry.marker.remove",
+          "lineNumber": 245
+        },
+        {
+          "caller": "reconcile",
+          "callee": "markers.current.delete",
+          "lineNumber": 246
+        },
+        {
+          "caller": "reconcile",
+          "callee": "markers.current.get",
+          "lineNumber": 250
+        },
+        {
+          "caller": "reconcile",
+          "callee": "existing.marker.setLngLat",
+          "lineNumber": 252
+        },
+        {
+          "caller": "reconcile",
+          "callee": "Object.assign",
+          "lineNumber": 253
+        },
+        {
+          "caller": "reconcile",
+          "callee": "document.createElement",
+          "lineNumber": 255
+        },
+        {
+          "caller": "reconcile",
+          "callee": "new Marker({ element, anchor: \"bottom\" })\r\n            .setLngLat(entry.coordinate)\r\n            .addTo",
+          "lineNumber": 257
+        },
+        {
+          "caller": "reconcile",
+          "callee": "new Marker({ element, anchor: \"bottom\" })\r\n            .setLngLat",
+          "lineNumber": 257
+        },
+        {
+          "caller": "reconcile",
+          "callee": "markers.current.set",
+          "lineNumber": 260
+        },
+        {
+          "caller": "reconcile",
+          "callee": "setPins",
+          "lineNumber": 263
+        },
+        {
+          "caller": "reconcile",
+          "callee": "Array.from",
+          "lineNumber": 264
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.on",
+          "lineNumber": 267
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.on",
+          "lineNumber": 268
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "reconcile",
+          "lineNumber": 269
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.off",
+          "lineNumber": 271
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.off",
+          "lineNumber": 272
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useEffect",
+          "lineNumber": 275
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useEffect",
+          "lineNumber": 280
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "restaurants.find",
+          "lineNumber": 281
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setMoved",
+          "lineNumber": 284
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.easeTo",
+          "lineNumber": 285
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "Math.max",
+          "lineNumber": 287
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "m.getZoom",
+          "lineNumber": 287
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "useEffect",
+          "lineNumber": 293
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "originMarker.current?.remove",
+          "lineNumber": 295
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "document.createElement",
+          "lineNumber": 297
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "el.setAttribute",
+          "lineNumber": 299
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "el.setAttribute",
+          "lineNumber": 301
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "new Marker({ element: el })\r\n      .setLngLat(userCoordinate)\r\n      .addTo",
+          "lineNumber": 302
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "new Marker({ element: el })\r\n      .setLngLat",
+          "lineNumber": 302
+        },
+        {
+          "caller": "locate",
+          "callee": "onLocate",
+          "lineNumber": 307
+        },
+        {
+          "caller": "locate",
+          "callee": "map.current?.easeTo",
+          "lineNumber": 308
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "pins.map",
+          "lineNumber": 313
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "createPortal",
+          "lineNumber": 314
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "(() => {\r\n              const r = restaurantById.get(pin.id);\r\n              if (!r) return null;\r\n              return selected === r.id ? (\r\n                <ActiveMapRestaurantMarker\r\n                  restaurant={r}\r\n                  onDetail={onDetail}\r\n                  onClose={onClose}\r\n                />\r\n              ) : (\r\n                <MapRestaurantMarker\r\n                  restaurant={r}\r\n                  highlight={searchResultHighlightState(\r\n                    r.id,\r\n                    selected,\r\n                    hovered,\r\n                    searching,\r\n                  )}\r\n                  onSelect={() => selectRef.current(r.id)}\r\n                  onHover={onHover}\r\n                />\r\n              );\r\n            })",
+          "lineNumber": 316
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "restaurantById.get",
+          "lineNumber": 317
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "searchResultHighlightState",
+          "lineNumber": 328
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "selectRef.current",
+          "lineNumber": 334
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "map.current?.getSource",
+          "lineNumber": 344
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "source.getClusterExpansionZoom",
+          "lineNumber": 347
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "map.current?.easeTo",
+          "lineNumber": 350
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "location.reload",
+          "lineNumber": 378
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "getMapProvider",
+          "lineNumber": 390
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "boundsRef.current",
+          "lineNumber": 399
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "map.current.getBounds",
+          "lineNumber": 399
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setMoved",
+          "lineNumber": 400
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "map.current?.zoomIn",
+          "lineNumber": 412
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setMoved",
+          "lineNumber": 413
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "map.current?.zoomOut",
+          "lineNumber": 421
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setMoved",
+          "lineNumber": 422
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "onResetBounds",
+          "lineNumber": 434
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setMoved",
+          "lineNumber": 435
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "map.current?.jumpTo",
+          "lineNumber": 436
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "setLayer",
+          "lineNumber": 444
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "getMapProvider",
+          "lineNumber": 453
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "getMapProvider",
+          "lineNumber": 463
+        },
+        {
+          "caller": "DiscoveryMap",
+          "callee": "getMapProvider",
+          "lineNumber": 464
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 48,
+      "nonEmptyLines": 41,
+      "functions": [
+        {
+          "name": "Brand",
+          "startLine": 7,
+          "endLine": 12,
+          "params": []
+        },
+        {
+          "name": "NavigationItems",
+          "startLine": 26,
+          "endLine": 33,
+          "params": [
+            "{ view, savedCount, planCount, onNavigate }"
+          ]
+        },
+        {
+          "name": "DiscoveryHeader",
+          "startLine": 35,
+          "endLine": 47,
+          "params": [
+            "{ dark, signedIn, onTheme, onAccount, ...navigation }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Brand",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "DiscoveryHeader",
+          "line": 35,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NavigationItems",
+          "callee": "destinations.map",
+          "lineNumber": 27
+        },
+        {
+          "caller": "NavigationItems",
+          "callee": "onNavigate",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/food-map.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 1127,
+      "nonEmptyLines": 1119,
+      "functions": [
+        {
+          "name": "FoodMap",
+          "startLine": 69,
+          "endLine": 1107,
+          "params": [
+            "{ restaurants }"
+          ]
+        },
+        {
+          "name": "Empty",
+          "startLine": 1108,
+          "endLine": 1127,
+          "params": [
+            "{\r\n  icon,\r\n  title,\r\n  text,\r\n  action,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FoodMap",
+          "line": 69,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "FoodMap",
+          "callee": "useUserLocation",
+          "lineNumber": 70
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 71
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useDiscoveryQuery",
+          "lineNumber": 74
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 75
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 76
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 77
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 78
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 79
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 80
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 81
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 82
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 83
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 84
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 85
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 86
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 87
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 88
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 89
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 90
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 91
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 92
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useState",
+          "lineNumber": 93
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useRef",
+          "lineNumber": 96
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useCallback",
+          "lineNumber": 97
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setToast",
+          "lineNumber": 98
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "clearTimeout",
+          "lineNumber": 99
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setTimeout",
+          "lineNumber": 100
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setToast",
+          "lineNumber": 100
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useEffect",
+          "lineNumber": 104
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "document.querySelector",
+          "lineNumber": 109
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Promise.all([\r\n      document.fonts.ready,\r\n      thumbnail?.decode().catch(() => undefined),\r\n    ]).then",
+          "lineNumber": 110
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Promise.all",
+          "lineNumber": 110
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "thumbnail?.decode().catch",
+          "lineNumber": 112
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "thumbnail?.decode",
+          "lineNumber": 112
+        },
+        {
+          "caller": "mount",
+          "callee": "setMapReady",
+          "lineNumber": 116
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "window.requestIdleCallback",
+          "lineNumber": 119
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setTimeout",
+          "lineNumber": 120
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "window.cancelIdleCallback",
+          "lineNumber": 124
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "clearTimeout",
+          "lineNumber": 125
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useEffect",
+          "lineNumber": 128
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "JSON.parse",
+          "lineNumber": 130
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "localStorage.getItem",
+          "lineNumber": 130
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setSaved",
+          "lineNumber": 131
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Array.isArray",
+          "lineNumber": 132
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "store.saved.filter",
+          "lineNumber": 133
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number.isFinite",
+          "lineNumber": 137
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Date.now",
+          "lineNumber": 138
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "restaurants.some",
+          "lineNumber": 139
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number.isFinite",
+          "lineNumber": 140
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Date.parse",
+          "lineNumber": 140
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number.isInteger",
+          "lineNumber": 141
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "[\"planned\", \"arrived\"].includes",
+          "lineNumber": 144
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPlan",
+          "lineNumber": 146
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setSignedIn",
+          "lineNumber": 147
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDark",
+          "lineNumber": 149
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "matchMedia",
+          "lineNumber": 149
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setStorageReady",
+          "lineNumber": 150
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "clearTimeout",
+          "lineNumber": 152
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useEffect",
+          "lineNumber": 155
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "localStorage.setItem",
+          "lineNumber": 158
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "JSON.stringify",
+          "lineNumber": 160
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 163
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useEffect",
+          "lineNumber": 168
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setBounds",
+          "lineNumber": 168
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useEffect",
+          "lineNumber": 169
+        },
+        {
+          "caller": "handle",
+          "callee": "[\"INPUT\", \"TEXTAREA\", \"SELECT\"].includes",
+          "lineNumber": 174
+        },
+        {
+          "caller": "handle",
+          "callee": "document.querySelector",
+          "lineNumber": 175
+        },
+        {
+          "caller": "handle",
+          "callee": "event.preventDefault",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handle",
+          "callee": "document\r\n          .querySelector<HTMLInputElement>('input[name=\"search\"]')\r\n          ?.focus",
+          "lineNumber": 178
+        },
+        {
+          "caller": "handle",
+          "callee": "document\r\n          .querySelector",
+          "lineNumber": 178
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "window.addEventListener",
+          "lineNumber": 184
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "window.removeEventListener",
+          "lineNumber": 185
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useEffect",
+          "lineNumber": 187
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useEffect",
+          "lineNumber": 190
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Date.now",
+          "lineNumber": 192
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPlan",
+          "lineNumber": 194
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 195
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setTimeout",
+          "lineNumber": 198
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPlan",
+          "lineNumber": 199
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 200
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "clearTimeout",
+          "lineNumber": 202
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "restaurants.find",
+          "lineNumber": 204
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useCallback",
+          "lineNumber": 207
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "getWalkingMinutes",
+          "lineNumber": 207
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useCallback",
+          "lineNumber": 208
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "getMealMinutes",
+          "lineNumber": 208
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useMemo",
+          "lineNumber": 209
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "selectDiscoveryRestaurants",
+          "lineNumber": 210
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useMemo",
+          "lineNumber": 213
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "results.map",
+          "lineNumber": 214
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "originWalk",
+          "lineNumber": 214
+        },
+        {
+          "caller": "navigate",
+          "callee": "setView",
+          "lineNumber": 218
+        },
+        {
+          "caller": "selectRestaurant",
+          "callee": "setSelected",
+          "lineNumber": 222
+        },
+        {
+          "caller": "saveRestaurant",
+          "callee": "setAccountOpen",
+          "lineNumber": 227
+        },
+        {
+          "caller": "saveRestaurant",
+          "callee": "setSaved",
+          "lineNumber": 230
+        },
+        {
+          "caller": "saveRestaurant",
+          "callee": "previous.includes",
+          "lineNumber": 231
+        },
+        {
+          "caller": "saveRestaurant",
+          "callee": "previous.filter",
+          "lineNumber": 232
+        },
+        {
+          "caller": "saveRestaurant",
+          "callee": "notify",
+          "lineNumber": 235
+        },
+        {
+          "caller": "saveRestaurant",
+          "callee": "saved.includes",
+          "lineNumber": 236
+        },
+        {
+          "caller": "reset",
+          "callee": "setQuery",
+          "lineNumber": 242
+        },
+        {
+          "caller": "reset",
+          "callee": "setCategory",
+          "lineNumber": 243
+        },
+        {
+          "caller": "reset",
+          "callee": "setFilters",
+          "lineNumber": 244
+        },
+        {
+          "caller": "reset",
+          "callee": "setBounds",
+          "lineNumber": 245
+        },
+        {
+          "caller": "startPlan",
+          "callee": "setAccountOpen",
+          "lineNumber": 249
+        },
+        {
+          "caller": "startPlan",
+          "callee": "setPlanError",
+          "lineNumber": 252
+        },
+        {
+          "caller": "startPlan",
+          "callee": "setPeople",
+          "lineNumber": 253
+        },
+        {
+          "caller": "startPlan",
+          "callee": "setArrival",
+          "lineNumber": 254
+        },
+        {
+          "caller": "startPlan",
+          "callee": "setPlanOpen",
+          "lineNumber": 255
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "event.preventDefault",
+          "lineNumber": 258
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "Number.isInteger",
+          "lineNumber": 260
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "setPlanError",
+          "lineNumber": 261
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "setPlanError",
+          "lineNumber": 265
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "setPlanError",
+          "lineNumber": 269
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "Date.now",
+          "lineNumber": 274
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "Number",
+          "lineNumber": 274
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "setPlan",
+          "lineNumber": 275
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "new Date(Date.now() + Number(arrival) * 60000).toISOString",
+          "lineNumber": 277
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "Date.now",
+          "lineNumber": 277
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "Number",
+          "lineNumber": 277
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "setPlanOpen",
+          "lineNumber": 282
+        },
+        {
+          "caller": "confirmPlan",
+          "callee": "notify",
+          "lineNumber": 283
+        },
+        {
+          "caller": "cancelPlan",
+          "callee": "setPlan",
+          "lineNumber": 287
+        },
+        {
+          "caller": "cancelPlan",
+          "callee": "notify",
+          "lineNumber": 288
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "useRef",
+          "lineNumber": 291
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "getActiveFilterCount",
+          "lineNumber": 292
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 292
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 292
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Boolean",
+          "lineNumber": 292
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "selectDiscoveryRestaurants",
+          "lineNumber": 293
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setFilters",
+          "lineNumber": 295
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setCategory",
+          "lineNumber": 295
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setBounds",
+          "lineNumber": 295
+        },
+        {
+          "caller": "clearFilters",
+          "callee": "setSelected",
+          "lineNumber": 295
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "restaurants.find",
+          "lineNumber": 297
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDark",
+          "lineNumber": 310
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setAccountOpen",
+          "lineNumber": 310
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setQuery",
+          "lineNumber": 344
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setBounds",
+          "lineNumber": 344
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setQuery",
+          "lineNumber": 350
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 358
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraftReturnOrigin",
+          "lineNumber": 358
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setFilterOpen",
+          "lineNumber": 358
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setFilters",
+          "lineNumber": 365
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 378
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraftReturnOrigin",
+          "lineNumber": 379
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setFilterOpen",
+          "lineNumber": 380
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setFilters",
+          "lineNumber": 394
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setFilters",
+          "lineNumber": 415
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 415
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "categories.map",
+          "lineNumber": 426
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setCategory",
+          "lineNumber": 433
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setBounds",
+          "lineNumber": 433
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setSort",
+          "lineNumber": 449
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "new Intl.DateTimeFormat(\"vi-VN\", {\r\n                          hour: \"2-digit\",\r\n                          minute: \"2-digit\",\r\n                          timeZone: \"Asia/Ho_Chi_Minh\",\r\n                        }).format",
+          "lineNumber": 480
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPlan",
+          "lineNumber": 495
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 496
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setSelected",
+          "lineNumber": 507
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPeople",
+          "lineNumber": 508
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setArrival",
+          "lineNumber": 509
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPlanError",
+          "lineNumber": 510
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPlanOpen",
+          "lineNumber": 511
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setView",
+          "lineNumber": 532
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "results.map",
+          "lineNumber": 542
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "originWalk",
+          "lineNumber": 545
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "saved.includes",
+          "lineNumber": 547
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "totalTime",
+          "lineNumber": 549
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "searchResultHighlightState",
+          "lineNumber": 550
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Boolean",
+          "lineNumber": 554
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "selectRestaurant",
+          "lineNumber": 557
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "saveRestaurant",
+          "lineNumber": 558
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "reset",
+          "lineNumber": 584
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setView",
+          "lineNumber": 585
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setInfoOpen",
+          "lineNumber": 599
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "selectRestaurant",
+          "lineNumber": 622
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 623
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "document\r\n                        .querySelector(`[data-restaurant-id=\"${id}\"]`)\r\n                        ?.scrollIntoView",
+          "lineNumber": 624
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "document\r\n                        .querySelector",
+          "lineNumber": 624
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "matchMedia",
+          "lineNumber": 628
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setBounds",
+          "lineNumber": 637
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Boolean",
+          "lineNumber": 641
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDetailOpen",
+          "lineNumber": 644
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setSelected",
+          "lineNumber": 645
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "results.some",
+          "lineNumber": 655
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "e.preventDefault",
+          "lineNumber": 677
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setFilters",
+          "lineNumber": 678
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setReturnOrigin",
+          "lineNumber": 679
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setFilterOpen",
+          "lineNumber": 680
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "money",
+          "lineNumber": 684
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 693
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 693
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "[30000, 50000, 70000, 100000].map",
+          "lineNumber": 702
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 702
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 711
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 711
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 726
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 726
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "[0, 30, 45, 60, 90].map",
+          "lineNumber": 729
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 742
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 742
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 756
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "[\"Điều hòa\", \"Chỗ để xe\", \"Mang về\"].map",
+          "lineNumber": 760
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraftReturnOrigin",
+          "lineNumber": 771
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 771
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "origins.map",
+          "lineNumber": 773
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 784
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 793
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraft",
+          "lineNumber": 802
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setDraftReturnOrigin",
+          "lineNumber": 802
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "originWalk",
+          "lineNumber": 830
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "totalTime",
+          "lineNumber": 849
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "originWalk",
+          "lineNumber": 852
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "current.menu.map",
+          "lineNumber": 861
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "money",
+          "lineNumber": 864
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "current.amenities.map",
+          "lineNumber": 869
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "[1, 2, 3, 4, 5].map",
+          "lineNumber": 890
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setAccountOpen",
+          "lineNumber": 897
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setReviews",
+          "lineNumber": 900
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 910
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "reviewHistory.join",
+          "lineNumber": 921
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "saveRestaurant",
+          "lineNumber": 927
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "saved.includes",
+          "lineNumber": 931
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "saved.includes",
+          "lineNumber": 933
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 947
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setArrival",
+          "lineNumber": 977
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPeople",
+          "lineNumber": 994
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "Number",
+          "lineNumber": 994
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setSignedIn",
+          "lineNumber": 1041
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setAccountOpen",
+          "lineNumber": 1042
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 1043
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setPlan",
+          "lineNumber": 1090
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "notify",
+          "lineNumber": 1091
+        },
+        {
+          "caller": "FoodMap",
+          "callee": "setToast",
+          "lineNumber": 1098
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 113,
+      "functions": [
+        {
+          "name": "searchResultHighlightState",
+          "startLine": 7,
+          "endLine": 20,
+          "params": [
+            "id",
+            "selected",
+            "hovered",
+            "searching"
+          ]
+        },
+        {
+          "name": "MapRestaurantMarker",
+          "startLine": 27,
+          "endLine": 59,
+          "params": [
+            "{\r\n  restaurant: r,\r\n  highlight,\r\n  onSelect,\r\n  onHover,\r\n}"
+          ]
+        },
+        {
+          "name": "ActiveMapRestaurantMarker",
+          "startLine": 60,
+          "endLine": 114,
+          "params": [
+            "{\r\n  restaurant: r,\r\n  onDetail,\r\n  onClose,\r\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "searchResultHighlightState",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "MapRestaurantMarker",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "ActiveMapRestaurantMarker",
+          "line": 60,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "MapRestaurantMarker",
+          "callee": "compactPrice",
+          "lineNumber": 38
+        },
+        {
+          "caller": "MapRestaurantMarker",
+          "callee": "onHover",
+          "lineNumber": 41
+        },
+        {
+          "caller": "MapRestaurantMarker",
+          "callee": "onHover",
+          "lineNumber": 42
+        },
+        {
+          "caller": "MapRestaurantMarker",
+          "callee": "onHover",
+          "lineNumber": 43
+        },
+        {
+          "caller": "MapRestaurantMarker",
+          "callee": "onHover",
+          "lineNumber": 44
+        },
+        {
+          "caller": "MapRestaurantMarker",
+          "callee": "compactPrice",
+          "lineNumber": 51
+        },
+        {
+          "caller": "ActiveMapRestaurantMarker",
+          "callee": "r.category.toLowerCase",
+          "lineNumber": 79
+        },
+        {
+          "caller": "ActiveMapRestaurantMarker",
+          "callee": "compactPrice",
+          "lineNumber": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 124,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "reducer",
+          "startLine": 28,
+          "endLine": 48,
+          "params": [
+            "snapshot",
+            "action"
+          ]
+        },
+        {
+          "name": "useDiscoveryQuery",
+          "startLine": 51,
+          "endLine": 124,
+          "params": [
+            "restaurants"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useDiscoveryQuery",
+          "line": 51,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "reducer",
+          "callee": "(action.value as (value: DiscoveryQueryState[QueryKey]) => DiscoveryQueryState[QueryKey])",
+          "lineNumber": 40
+        },
+        {
+          "caller": "reducer",
+          "callee": "Object.is",
+          "lineNumber": 42
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "useMemo",
+          "lineNumber": 52
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "restaurants.map",
+          "lineNumber": 52
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "useReducer",
+          "lineNumber": 53
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "createDefaultDiscoveryQuery",
+          "lineNumber": 54
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "useRef",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "useCallback",
+          "lineNumber": 60
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "clearTimeout",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "useEffect",
+          "lineNumber": 67
+        },
+        {
+          "caller": "restore",
+          "callee": "cancelWrite",
+          "lineNumber": 69
+        },
+        {
+          "caller": "restore",
+          "callee": "dispatch",
+          "lineNumber": 70
+        },
+        {
+          "caller": "restore",
+          "callee": "parseDiscoveryQuery",
+          "lineNumber": 72
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "restore",
+          "lineNumber": 75
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "window.addEventListener",
+          "lineNumber": 76
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "window.removeEventListener",
+          "lineNumber": 78
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "cancelWrite",
+          "lineNumber": 79
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "useEffect",
+          "lineNumber": 83
+        },
+        {
+          "caller": "write",
+          "callee": "serializeDiscoveryQuery",
+          "lineNumber": 86
+        },
+        {
+          "caller": "write",
+          "callee": "window.history.pushState",
+          "lineNumber": 92
+        },
+        {
+          "caller": "write",
+          "callee": "window.history.replaceState",
+          "lineNumber": 93
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setTimeout",
+          "lineNumber": 96
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "write",
+          "lineNumber": 97
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "useMemo",
+          "lineNumber": 101
+        },
+        {
+          "caller": "setter",
+          "callee": "dispatch",
+          "lineNumber": 103
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 106
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 107
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 108
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 109
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 110
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 112
+        },
+        {
+          "caller": "useDiscoveryQuery",
+          "callee": "setter",
+          "lineNumber": 113
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "useUserLocation",
+          "startLine": 8,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useUserLocation",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useUserLocation",
+          "callee": "useState",
+          "lineNumber": 9
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "useRef",
+          "lineNumber": 10
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "useRef",
+          "lineNumber": 11
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "useCallback",
+          "lineNumber": 12
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "navigator.geolocation.clearWatch",
+          "lineNumber": 14
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "useCallback",
+          "lineNumber": 17
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "stop",
+          "lineNumber": 18
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "setState",
+          "lineNumber": 21
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "setState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "navigator.geolocation.watchPosition",
+          "lineNumber": 25
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "setState",
+          "lineNumber": 27
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "setState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "useEffect",
+          "lineNumber": 35
+        },
+        {
+          "caller": "useUserLocation",
+          "callee": "request",
+          "lineNumber": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 183,
+      "nonEmptyLines": 169,
+      "functions": [
+        {
+          "name": "createDefaultDiscoveryQuery",
+          "startLine": 44,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "parseDiscoveryQuery",
+          "startLine": 52,
+          "endLine": 88,
+          "params": [
+            "search",
+            "restaurantIds"
+          ]
+        },
+        {
+          "name": "serializeDiscoveryQuery",
+          "startLine": 91,
+          "endLine": 109,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "getActiveFilterCount",
+          "startLine": 111,
+          "endLine": 119,
+          "params": [
+            "filters"
+          ]
+        },
+        {
+          "name": "getWalkingMinutes",
+          "startLine": 121,
+          "endLine": 132,
+          "params": [
+            "restaurant",
+            "origin",
+            "position"
+          ]
+        },
+        {
+          "name": "getMealMinutes",
+          "startLine": 134,
+          "endLine": 142,
+          "params": [
+            "restaurant",
+            "origin",
+            "returnOrigin",
+            "position"
+          ]
+        },
+        {
+          "name": "normalizeText",
+          "startLine": 144,
+          "endLine": 147,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "selectDiscoveryRestaurants",
+          "startLine": 149,
+          "endLine": 183,
+          "params": [
+            "restaurants",
+            "state",
+            "options"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "defaultFilters",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "discoveryCategories",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "createDefaultDiscoveryQuery",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "parseDiscoveryQuery",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "serializeDiscoveryQuery",
+          "line": 91,
+          "isDefault": false
+        },
+        {
+          "name": "getActiveFilterCount",
+          "line": 111,
+          "isDefault": false
+        },
+        {
+          "name": "getWalkingMinutes",
+          "line": 121,
+          "isDefault": false
+        },
+        {
+          "name": "getMealMinutes",
+          "line": 134,
+          "isDefault": false
+        },
+        {
+          "name": "selectDiscoveryRestaurants",
+          "line": 149,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "createDefaultDiscoveryQuery",
+          "lineNumber": 57
+        },
+        {
+          "caller": "numeric",
+          "callee": "params.get",
+          "lineNumber": 59
+        },
+        {
+          "caller": "numeric",
+          "callee": "Number",
+          "lineNumber": 60
+        },
+        {
+          "caller": "numeric",
+          "callee": "raw.trim",
+          "lineNumber": 61
+        },
+        {
+          "caller": "numeric",
+          "callee": "allowed.includes",
+          "lineNumber": 61
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 65
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 66
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 68
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 69
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 70
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "discoveryCategories.some",
+          "lineNumber": 71
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "sorts.includes",
+          "lineNumber": 74
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "restaurantIds.includes",
+          "lineNumber": 75
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "numeric",
+          "lineNumber": 77
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "Array.from",
+          "lineNumber": 77
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "numeric",
+          "lineNumber": 78
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "numeric",
+          "lineNumber": 79
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "numeric",
+          "lineNumber": 80
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 81
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "params.get",
+          "lineNumber": 82
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "amenities.includes",
+          "lineNumber": 83
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "numeric",
+          "lineNumber": 85
+        },
+        {
+          "caller": "parseDiscoveryQuery",
+          "callee": "numeric",
+          "lineNumber": 86
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 93
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 94
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 95
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 96
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 97
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 100
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "String",
+          "lineNumber": 100
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 102
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "String",
+          "lineNumber": 102
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 103
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 104
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 105
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 106
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "String",
+          "lineNumber": 106
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.set",
+          "lineNumber": 107
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "String",
+          "lineNumber": 107
+        },
+        {
+          "caller": "serializeDiscoveryQuery",
+          "callee": "params.toString",
+          "lineNumber": 108
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Number",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Number",
+          "lineNumber": 113
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Number",
+          "lineNumber": 114
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Number",
+          "lineNumber": 115
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Number",
+          "lineNumber": 116
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Number",
+          "lineNumber": 117
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Number",
+          "lineNumber": 118
+        },
+        {
+          "caller": "getActiveFilterCount",
+          "callee": "Boolean",
+          "lineNumber": 118
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.sin",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "rad",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.cos",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "rad",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.cos",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "rad",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.sin",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "rad",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.asin",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.sqrt",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.min",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.max",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.ceil",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getWalkingMinutes",
+          "callee": "Math.max",
+          "lineNumber": 131
+        },
+        {
+          "caller": "getMealMinutes",
+          "callee": "getWalkingMinutes",
+          "lineNumber": 140
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "value.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\r\n    .replace(/đ/gi, \"d\").toLowerCase",
+          "lineNumber": 145
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "value.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\r\n    .replace",
+          "lineNumber": 145
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "value.normalize(\"NFD\").replace",
+          "lineNumber": 145
+        },
+        {
+          "caller": "normalizeText",
+          "callee": "value.normalize",
+          "lineNumber": 145
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "normalizeText",
+          "lineNumber": 158
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "restaurants.filter((restaurant) =>\r\n    (state.view !== \"saved\" || saved.has(restaurant.id))\r\n    && matchesFoodGroup(restaurant, state.category)\r\n    && (!query || normalizeText(\r\n      `${restaurant.name} ${restaurant.category} ${restaurant.categories?.join(\" \") ?? \"\"} ${restaurant.address} ${restaurant.menu.map((item) => item.name).join(\" \")}`,\r\n    ).includes(query))\r\n    && restaurant.price <= filters.budget\r\n    && (!filters.walk || getWalkingMinutes(restaurant, origin, options.position) <= filters.walk)\r\n    && (!filters.available || getMealMinutes(restaurant, origin, returnOrigin, options.position) <= filters.available)\r\n    && restaurant.rating >= filters.rating\r\n    && (!filters.open || restaurant.open)\r\n    && (!filters.quiet || restaurant.crowd === \"Vắng\")\r\n    && (!filters.amenity || restaurant.amenities.includes(filters.amenity))\r\n    && (!options.bounds || options.bounds.contains(restaurant.coordinate)),\r\n  ).sort",
+          "lineNumber": 161
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "restaurants.filter",
+          "lineNumber": 161
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "saved.has",
+          "lineNumber": 162
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "matchesFoodGroup",
+          "lineNumber": 163
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "normalizeText(\r\n      `${restaurant.name} ${restaurant.category} ${restaurant.categories?.join(\" \") ?? \"\"} ${restaurant.address} ${restaurant.menu.map((item) => item.name).join(\" \")}`,\r\n    ).includes",
+          "lineNumber": 164
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "normalizeText",
+          "lineNumber": 164
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "restaurant.categories?.join",
+          "lineNumber": 165
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "restaurant.menu.map((item) => item.name).join",
+          "lineNumber": 165
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "restaurant.menu.map",
+          "lineNumber": 165
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "getWalkingMinutes",
+          "lineNumber": 168
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "getMealMinutes",
+          "lineNumber": 169
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "restaurant.amenities.includes",
+          "lineNumber": 173
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "options.bounds.contains",
+          "lineNumber": 174
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "getWalkingMinutes",
+          "lineNumber": 178
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "getWalkingMinutes",
+          "lineNumber": 178
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "getMealMinutes",
+          "lineNumber": 179
+        },
+        {
+          "caller": "selectDiscoveryRestaurants",
+          "callee": "getMealMinutes",
+          "lineNumber": 179
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/lib/data.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "money",
+          "startLine": 11,
+          "endLine": 16,
+          "params": [
+            "amount"
+          ]
+        },
+        {
+          "name": "compactPrice",
+          "startLine": 17,
+          "endLine": 17,
+          "params": [
+            "amount"
+          ]
+        },
+        {
+          "name": "normalize",
+          "startLine": 18,
+          "endLine": 23,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "mealTime",
+          "startLine": 24,
+          "endLine": 25,
+          "params": [
+            "r",
+            "walk"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Restaurant",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "origins",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "money",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "compactPrice",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "normalize",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "mealTime",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "money",
+          "callee": "new Intl.NumberFormat(\"vi-VN\", {\n    style: \"currency\",\n    currency: \"VND\",\n    maximumFractionDigits: 0,\n  }).format",
+          "lineNumber": 12
+        },
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/đ/gi, \"d\")\n    .toLowerCase",
+          "lineNumber": 19
+        },
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace",
+          "lineNumber": 19
+        },
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize(\"NFD\")\n    .replace",
+          "lineNumber": 19
+        },
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 6,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/web/src/lib/map-provider.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 258,
+      "nonEmptyLines": 257,
+      "functions": [
+        {
+          "name": "point",
+          "startLine": 15,
+          "endLine": 18,
+          "params": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "name": "polygon",
+          "startLine": 19,
+          "endLine": 30,
+          "params": [
+            "x",
+            "y",
+            "w",
+            "h",
+            "kind"
+          ]
+        },
+        {
+          "name": "road",
+          "startLine": 52,
+          "endLine": 60,
+          "params": [
+            "coordinates",
+            "major"
+          ]
+        },
+        {
+          "name": "source",
+          "startLine": 131,
+          "endLine": 134,
+          "params": [
+            "features"
+          ]
+        },
+        {
+          "name": "getMapProvider",
+          "startLine": 206,
+          "endLine": 219,
+          "params": []
+        },
+        {
+          "name": "applyDarkMapTheme",
+          "startLine": 222,
+          "endLine": 258,
+          "params": [
+            "map"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "offlineProvider",
+          "line": 135,
+          "isDefault": false
+        },
+        {
+          "name": "getMapProvider",
+          "line": 206,
+          "isDefault": false
+        },
+        {
+          "name": "applyDarkMapTheme",
+          "line": 222,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "polygon",
+          "callee": "point",
+          "lineNumber": 20
+        },
+        {
+          "caller": "polygon",
+          "callee": "point",
+          "lineNumber": 21
+        },
+        {
+          "caller": "polygon",
+          "callee": "base.push",
+          "lineNumber": 22
+        },
+        {
+          "caller": "road",
+          "callee": "roads.push",
+          "lineNumber": 53
+        },
+        {
+          "caller": "road",
+          "callee": "coordinates.map",
+          "lineNumber": 58
+        },
+        {
+          "caller": "road",
+          "callee": "point",
+          "lineNumber": 58
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "import",
+          "lineNumber": 222
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "getMapProvider",
+          "lineNumber": 223
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.getStyle",
+          "lineNumber": 225
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "layer.id.toLowerCase",
+          "lineNumber": 226
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "/water|lake|river/.test",
+          "lineNumber": 227
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setPaintProperty",
+          "lineNumber": 229
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setPaintProperty",
+          "lineNumber": 231
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "/park|landuse|green/.test",
+          "lineNumber": 236
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setPaintProperty",
+          "lineNumber": 241
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setPaintProperty",
+          "lineNumber": 243
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setPaintProperty",
+          "lineNumber": 246
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "/casing|border/.test",
+          "lineNumber": 249
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setPaintProperty",
+          "lineNumber": 252
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setPaintProperty",
+          "lineNumber": 253
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "getMapProvider",
+          "lineNumber": 254
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "/housenumber|ref|shield/.test",
+          "lineNumber": 254
+        },
+        {
+          "caller": "applyDarkMapTheme",
+          "callee": "map.setLayoutProperty",
+          "lineNumber": 255
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    }
+  ]
+}

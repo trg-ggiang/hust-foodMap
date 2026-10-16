@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env.local
+output/
+.playwright-cli/
+next-env.d.ts
+*.tsbuildinfo
+public/maplibre-gl-worker.mjs
+apps/web/public/maplibre-gl-worker.mjs
+dist/
+.env
+apps/web/public/images/optimized/

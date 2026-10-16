@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "document:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "summary": "Documents workspace architecture, server/client boundaries, sample data ownership, desktop layout expectations, and required development verification.",
+      "tags": [
+        "documentation",
+        "architecture",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Explains the Next.js/React and NestJS workspace architecture, local setup, build commands, restaurant endpoints, environment configuration, and sample-data limitations.",
+      "tags": [
+        "documentation",
+        "architecture",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:VERIFICATION.md",
+      "type": "document",
+      "name": "VERIFICATION.md",
+      "filePath": "VERIFICATION.md",
+      "summary": "Records current and historical browser, API, build, accessibility, layout, map, and food-group verification evidence with integration limitations.",
+      "tags": [
+        "documentation",
+        "architecture",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Defines the root npm workspaces, Node engine requirement, coordinated development/start commands, and workspace build, typecheck, and API test scripts.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "workspace"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:README.md",
+      "target": "file:apps/api/src/main.ts",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:apps/web/src/app/page.tsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "config:apps/api/package.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "config:apps/web/package.json",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:VERIFICATION.md",
+      "target": "file:packages/contracts/food-groups.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

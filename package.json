@@ -1,0 +1,30 @@
+{
+  "name": "hust-foodmap",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"npm run dev -w @hust-foodmap/api\" \"npm run dev -w @hust-foodmap/web\"",
+    "dev:web": "npm run dev -w @hust-foodmap/web",
+    "dev:api": "npm run dev -w @hust-foodmap/api",
+    "build": "npm run build -w @hust-foodmap/api && npm run build -w @hust-foodmap/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "start": "concurrently -k -n api,web \"npm run start -w @hust-foodmap/api\" \"npm run start -w @hust-foodmap/web\"",
+    "start:api": "npm run start -w @hust-foodmap/api",
+    "start:web": "npm run start -w @hust-foodmap/web",
+    "preview": "npm run start",
+    "test": "npm run test -w @hust-foodmap/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "prettier": "^3.9.10",
+    "axe-core": "^4.14.0",
+    "lighthouse": "^13.5.0"
+  }
+}

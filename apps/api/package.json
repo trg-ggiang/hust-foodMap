@@ -1,0 +1,27 @@
+{
+  "name": "@hust-foodmap/api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k \"tsc --watch\" \"node --watch --env-file-if-exists=.env dist/main.js\"",
+    "predev": "tsc",
+    "build": "tsc",
+    "start": "node --env-file-if-exists=.env dist/main.js",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/*.test.cjs"
+  },
+  "dependencies": {
+    "@hust-foodmap/contracts": "*",
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^26.6.5"
+  }
+}

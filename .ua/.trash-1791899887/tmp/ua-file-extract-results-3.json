@@ -1,0 +1,265 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 5,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 5,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "apps/api/src/restaurants/restaurant-query.dto.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "RestaurantQueryDto",
+          "startLine": 11,
+          "endLine": 21,
+          "methods": [],
+          "properties": [
+            "q",
+            "category",
+            "maxPrice",
+            "openOnly"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RestaurantQueryDto",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurant.fixtures.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 144,
+      "nonEmptyLines": 144,
+      "exports": [
+        {
+          "name": "restaurants",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurants.controller.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "RestaurantsController",
+          "startLine": 5,
+          "endLine": 13,
+          "methods": [
+            "constructor",
+            "list",
+            "get"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RestaurantsController",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "list",
+          "callee": "Query",
+          "lineNumber": 7
+        },
+        {
+          "caller": "list",
+          "callee": "this.restaurants.list",
+          "lineNumber": 8
+        },
+        {
+          "caller": "get",
+          "callee": "Param",
+          "lineNumber": 10
+        },
+        {
+          "caller": "get",
+          "callee": "this.restaurants.get",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurants.module.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "RestaurantsModule",
+          "startLine": 8,
+          "endLine": 8,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RestaurantsModule",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurants.service.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 36,
+      "nonEmptyLines": 36,
+      "functions": [
+        {
+          "name": "normalize",
+          "startLine": 6,
+          "endLine": 11,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RestaurantsService",
+          "startLine": 13,
+          "endLine": 36,
+          "methods": [
+            "list",
+            "get"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RestaurantsService",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/đ/gi, \"d\")\n    .toLowerCase",
+          "lineNumber": 7
+        },
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize(\"NFD\")\n    .replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace",
+          "lineNumber": 7
+        },
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize(\"NFD\")\n    .replace",
+          "lineNumber": 7
+        },
+        {
+          "caller": "normalize",
+          "callee": "value\n    .normalize",
+          "lineNumber": 7
+        },
+        {
+          "caller": "list",
+          "callee": "normalize",
+          "lineNumber": 15
+        },
+        {
+          "caller": "list",
+          "callee": "restaurants.filter",
+          "lineNumber": 19
+        },
+        {
+          "caller": "list",
+          "callee": "normalize(\n              `${r.name} ${r.category} ${r.categories?.join(\" \") ?? \"\"} ${r.address} ${r.menu.map((m) => m.name).join(\" \")}`,\n            ).includes",
+          "lineNumber": 22
+        },
+        {
+          "caller": "list",
+          "callee": "normalize",
+          "lineNumber": 22
+        },
+        {
+          "caller": "list",
+          "callee": "r.categories?.join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "list",
+          "callee": "r.menu.map((m) => m.name).join",
+          "lineNumber": 23
+        },
+        {
+          "caller": "list",
+          "callee": "r.menu.map",
+          "lineNumber": 23
+        },
+        {
+          "caller": "list",
+          "callee": "matchesFoodGroup",
+          "lineNumber": 25
+        },
+        {
+          "caller": "get",
+          "callee": "restaurants.find",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    }
+  ]
+}

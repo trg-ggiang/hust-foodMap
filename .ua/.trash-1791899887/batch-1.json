@@ -1,0 +1,1398 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/web/src/components/food-image.tsx",
+      "type": "file",
+      "name": "food-image.tsx",
+      "filePath": "apps/web/src/components/food-image.tsx",
+      "summary": "Renders responsive food photographs using optimized WebP variants for recognized local images.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "type": "function",
+      "name": "FoodImage",
+      "filePath": "apps/web/src/components/food-image.tsx",
+      "lineRange": [
+        2,
+        27
+      ],
+      "summary": "Renders responsive food photographs using optimized WebP variants for recognized local images.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/components/primitives.tsx",
+      "type": "file",
+      "name": "primitives.tsx",
+      "filePath": "apps/web/src/components/primitives.tsx",
+      "summary": "Provides accessible modal dialogs, restaurant facts and interactive sidebar cards for discovery.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/web/src/components/primitives.tsx:Modal",
+      "type": "function",
+      "name": "Modal",
+      "filePath": "apps/web/src/components/primitives.tsx",
+      "lineRange": [
+        12,
+        49
+      ],
+      "summary": "Wraps Radix Dialog with a title, optional description and close control.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/components/primitives.tsx:RestaurantFacts",
+      "type": "function",
+      "name": "RestaurantFacts",
+      "filePath": "apps/web/src/components/primitives.tsx",
+      "lineRange": [
+        50,
+        66
+      ],
+      "summary": "Displays restaurant price range, rating, review count and walking duration.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/components/primitives.tsx:RestaurantSidebarCard",
+      "type": "function",
+      "name": "RestaurantSidebarCard",
+      "filePath": "apps/web/src/components/primitives.tsx",
+      "lineRange": [
+        67,
+        154
+      ],
+      "summary": "Displays a selectable restaurant card with saving, hover highlighting and estimated meal duration.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "type": "file",
+      "name": "discovery-map.tsx",
+      "filePath": "apps/web/src/features/discovery/components/discovery-map.tsx",
+      "summary": "Manages the MapLibre map lifecycle, clustered photo markers, selection, viewport filtering and user location controls.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "type": "function",
+      "name": "DiscoveryMap",
+      "filePath": "apps/web/src/features/discovery/components/discovery-map.tsx",
+      "lineRange": [
+        70,
+        468
+      ],
+      "summary": "Manages the MapLibre map lifecycle, clustered photo markers, selection, viewport filtering and user location controls.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "type": "file",
+      "name": "discovery-navigation.tsx",
+      "filePath": "apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "summary": "Renders the HUST FoodMap brand and desktop navigation for discovery, saved places and meal plans.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:Brand",
+      "type": "function",
+      "name": "Brand",
+      "filePath": "apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "lineRange": [
+        7,
+        12
+      ],
+      "summary": "Renders the linked HUST FoodMap logo and campus dining tagline.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:DiscoveryHeader",
+      "type": "function",
+      "name": "DiscoveryHeader",
+      "filePath": "apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "lineRange": [
+        35,
+        47
+      ],
+      "summary": "Renders navigation counts, theme toggle and local account action in the desktop header.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "type": "file",
+      "name": "food-map.tsx",
+      "filePath": "apps/web/src/features/discovery/components/food-map.tsx",
+      "summary": "Coordinates the discovery interface, search filters, map selection, saved restaurants and local trial meal planning. Persists saved and planning state locally while keeping location in memory.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "type": "function",
+      "name": "FoodMap",
+      "filePath": "apps/web/src/features/discovery/components/food-map.tsx",
+      "lineRange": [
+        69,
+        1107
+      ],
+      "summary": "Coordinates the discovery interface, search filters, map selection, saved restaurants and local trial meal planning. Persists saved and planning state locally while keeping location in memory.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/food-map.tsx:Empty",
+      "type": "function",
+      "name": "Empty",
+      "filePath": "apps/web/src/features/discovery/components/food-map.tsx",
+      "lineRange": [
+        1108,
+        1127
+      ],
+      "summary": "Renders a reusable empty state with icon, explanatory text and optional action.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "type": "file",
+      "name": "restaurant-markers.tsx",
+      "filePath": "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "summary": "Renders photo markers and expanded selected restaurant cards with consistent hover and search highlighting.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:searchResultHighlightState",
+      "type": "function",
+      "name": "searchResultHighlightState",
+      "filePath": "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "lineRange": [
+        7,
+        20
+      ],
+      "summary": "Prioritizes selected and hovered restaurant states before search match highlighting.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:MapRestaurantMarker",
+      "type": "function",
+      "name": "MapRestaurantMarker",
+      "filePath": "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "lineRange": [
+        27,
+        59
+      ],
+      "summary": "Renders an interactive food photo marker with price, rating and hover callbacks.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:ActiveMapRestaurantMarker",
+      "type": "function",
+      "name": "ActiveMapRestaurantMarker",
+      "filePath": "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "lineRange": [
+        60,
+        114
+      ],
+      "summary": "Renders the selected restaurant photo card with close and detail actions.",
+      "tags": [
+        "component",
+        "discovery",
+        "presentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "type": "file",
+      "name": "use-discovery-query.ts",
+      "filePath": "apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "summary": "Synchronizes typed discovery state with browser history, validates URL restoration and debounces search updates without server refetching.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:reducer",
+      "type": "function",
+      "name": "reducer",
+      "filePath": "apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "lineRange": [
+        28,
+        48
+      ],
+      "summary": "Restores validated query snapshots or applies typed changes while selecting push or replace history intent.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:useDiscoveryQuery",
+      "type": "function",
+      "name": "useDiscoveryQuery",
+      "filePath": "apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "lineRange": [
+        51,
+        124
+      ],
+      "summary": "Synchronizes typed discovery state with browser history, validates URL restoration and debounces search updates without server refetching.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "type": "file",
+      "name": "use-user-location.ts",
+      "filePath": "apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "summary": "Watches browser geolocation with retry, cancellation and stale callback protection while retaining coordinates only in memory.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/hooks/use-user-location.ts:useUserLocation",
+      "type": "function",
+      "name": "useUserLocation",
+      "filePath": "apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "lineRange": [
+        8,
+        37
+      ],
+      "summary": "Watches browser geolocation with retry, cancellation and stale callback protection while retaining coordinates only in memory.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "type": "file",
+      "name": "discovery-query.ts",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "summary": "Defines and validates discovery query state, canonical URL serialization, restaurant filters and walking or meal duration estimates.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:createDefaultDiscoveryQuery",
+      "type": "function",
+      "name": "createDefaultDiscoveryQuery",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "lineRange": [
+        44,
+        49
+      ],
+      "summary": "Creates a fresh default discovery state and independent filter object.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:parseDiscoveryQuery",
+      "type": "function",
+      "name": "parseDiscoveryQuery",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "lineRange": [
+        52,
+        88
+      ],
+      "summary": "Validates URL parameters against permitted values and known restaurant IDs before restoring discovery state.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:serializeDiscoveryQuery",
+      "type": "function",
+      "name": "serializeDiscoveryQuery",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "lineRange": [
+        91,
+        109
+      ],
+      "summary": "Builds a canonical query string that omits default discovery values.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:getActiveFilterCount",
+      "type": "function",
+      "name": "getActiveFilterCount",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "lineRange": [
+        111,
+        119
+      ],
+      "summary": "Counts enabled budget, walking, duration, rating, opening, crowd and amenity filters.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes",
+      "type": "function",
+      "name": "getWalkingMinutes",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "lineRange": [
+        121,
+        132
+      ],
+      "summary": "Estimates walking time from a current position using straight-line distance or adjusted sample walking times.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes",
+      "type": "function",
+      "name": "getMealMinutes",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "lineRange": [
+        134,
+        142
+      ],
+      "summary": "Combines walking, waiting, dining and return estimates for a complete meal duration.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:selectDiscoveryRestaurants",
+      "type": "function",
+      "name": "selectDiscoveryRestaurants",
+      "filePath": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "lineRange": [
+        149,
+        183
+      ],
+      "summary": "Filters restaurants by saved state, food group, normalized search, budget, time, rating, amenities and viewport, then sorts results.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/lib/data.ts",
+      "type": "file",
+      "name": "data.ts",
+      "filePath": "apps/web/src/lib/data.ts",
+      "summary": "Supplies campus origins and Vietnamese currency, price, text normalization and meal duration utilities.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/lib/data.ts:money",
+      "type": "function",
+      "name": "money",
+      "filePath": "apps/web/src/lib/data.ts",
+      "lineRange": [
+        11,
+        16
+      ],
+      "summary": "Formats a numeric amount as Vietnamese dong with no fractional digits.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/lib/data.ts:compactPrice",
+      "type": "function",
+      "name": "compactPrice",
+      "filePath": "apps/web/src/lib/data.ts",
+      "lineRange": [
+        17,
+        17
+      ],
+      "summary": "Formats a price as a compact thousands value.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/lib/data.ts:normalize",
+      "type": "function",
+      "name": "normalize",
+      "filePath": "apps/web/src/lib/data.ts",
+      "lineRange": [
+        18,
+        23
+      ],
+      "summary": "Removes Vietnamese diacritics and lowercases text for matching.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/lib/data.ts:mealTime",
+      "type": "function",
+      "name": "mealTime",
+      "filePath": "apps/web/src/lib/data.ts",
+      "lineRange": [
+        24,
+        25
+      ],
+      "summary": "Adds walking, waiting and dining durations for a meal estimate.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/lib/map-provider.ts",
+      "type": "file",
+      "name": "map-provider.ts",
+      "filePath": "apps/web/src/lib/map-provider.ts",
+      "summary": "Selects configured or OpenFreeMap styles with an illustrative offline fallback and applies a restrained dark map theme.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:apps/web/src/lib/map-provider.ts:polygon",
+      "type": "function",
+      "name": "polygon",
+      "filePath": "apps/web/src/lib/map-provider.ts",
+      "lineRange": [
+        19,
+        30
+      ],
+      "summary": "Builds illustrative polygon features from local coordinate offsets.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/lib/map-provider.ts:getMapProvider",
+      "type": "function",
+      "name": "getMapProvider",
+      "filePath": "apps/web/src/lib/map-provider.ts",
+      "lineRange": [
+        206,
+        219
+      ],
+      "summary": "Selects configured or OpenFreeMap styles with an illustrative offline fallback and applies a restrained dark map theme.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/lib/map-provider.ts:applyDarkMapTheme",
+      "type": "function",
+      "name": "applyDarkMapTheme",
+      "filePath": "apps/web/src/lib/map-provider.ts",
+      "lineRange": [
+        222,
+        258
+      ],
+      "summary": "Adjusts map layer colors and Vietnamese labels unless an illustrative or dedicated dark style is active.",
+      "tags": [
+        "utility",
+        "discovery",
+        "state-management"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/web/src/components/food-image.tsx",
+      "target": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/components/food-image.tsx",
+      "target": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "function:apps/web/src/components/primitives.tsx:Modal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "function:apps/web/src/components/primitives.tsx:Modal",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "function:apps/web/src/components/primitives.tsx:RestaurantFacts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "function:apps/web/src/components/primitives.tsx:RestaurantFacts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "function:apps/web/src/components/primitives.tsx:RestaurantSidebarCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "function:apps/web/src/components/primitives.tsx:RestaurantSidebarCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "file:apps/web/src/components/food-image.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/components/primitives.tsx",
+      "target": "file:apps/web/src/lib/data.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "target": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "target": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "target": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "target": "file:apps/web/src/lib/data.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "target": "file:apps/web/src/lib/map-provider.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "target": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:Brand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "target": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:Brand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "target": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:DiscoveryHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "target": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:DiscoveryHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "function:apps/web/src/features/discovery/components/food-map.tsx:Empty",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/components/food-image.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/components/primitives.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/lib/data.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:searchResultHighlightState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:searchResultHighlightState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:MapRestaurantMarker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:MapRestaurantMarker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:ActiveMapRestaurantMarker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:ActiveMapRestaurantMarker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "file:apps/web/src/components/food-image.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "target": "file:apps/web/src/lib/data.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:reducer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:useDiscoveryQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:useDiscoveryQuery",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "target": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "target": "function:apps/web/src/features/discovery/hooks/use-user-location.ts:useUserLocation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "target": "function:apps/web/src/features/discovery/hooks/use-user-location.ts:useUserLocation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:createDefaultDiscoveryQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:createDefaultDiscoveryQuery",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:parseDiscoveryQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:parseDiscoveryQuery",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:serializeDiscoveryQuery",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:serializeDiscoveryQuery",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getActiveFilterCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getActiveFilterCount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:selectDiscoveryRestaurants",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:selectDiscoveryRestaurants",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:money",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:money",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:compactPrice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:compactPrice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:normalize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:normalize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:mealTime",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/lib/data.ts",
+      "target": "function:apps/web/src/lib/data.ts:mealTime",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/lib/map-provider.ts",
+      "target": "function:apps/web/src/lib/map-provider.ts:polygon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/lib/map-provider.ts",
+      "target": "function:apps/web/src/lib/map-provider.ts:getMapProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/lib/map-provider.ts",
+      "target": "function:apps/web/src/lib/map-provider.ts:getMapProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:apps/web/src/lib/map-provider.ts",
+      "target": "function:apps/web/src/lib/map-provider.ts:applyDarkMapTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:apps/web/src/lib/map-provider.ts",
+      "target": "function:apps/web/src/lib/map-provider.ts:applyDarkMapTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/components/primitives.tsx:RestaurantFacts",
+      "target": "function:apps/web/src/lib/data.ts:compactPrice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "target": "function:apps/web/src/lib/map-provider.ts:getMapProvider",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "target": "function:apps/web/src/lib/map-provider.ts:applyDarkMapTheme",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:searchResultHighlightState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/hooks/use-user-location.ts:useUserLocation",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:useDiscoveryQuery",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:selectDiscoveryRestaurants",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getActiveFilterCount",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:searchResultHighlightState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/lib/data.ts:money",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:MapRestaurantMarker",
+      "target": "function:apps/web/src/lib/data.ts:compactPrice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:ActiveMapRestaurantMarker",
+      "target": "function:apps/web/src/lib/data.ts:compactPrice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:useDiscoveryQuery",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:createDefaultDiscoveryQuery",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/model/discovery-query.ts:parseDiscoveryQuery",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:createDefaultDiscoveryQuery",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/model/discovery-query.ts:selectDiscoveryRestaurants",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/model/discovery-query.ts:selectDiscoveryRestaurants",
+      "target": "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/lib/map-provider.ts:applyDarkMapTheme",
+      "target": "function:apps/web/src/lib/map-provider.ts:getMapProvider",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:apps/web/src/components/primitives.tsx:RestaurantSidebarCard",
+      "target": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/components/primitives.tsx:RestaurantSidebarCard",
+      "target": "function:apps/web/src/components/primitives.tsx:RestaurantFacts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:MapRestaurantMarker",
+      "target": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:ActiveMapRestaurantMarker",
+      "target": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:DiscoveryHeader",
+      "target": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:Brand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:MapRestaurantMarker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "target": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:ActiveMapRestaurantMarker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/components/primitives.tsx:RestaurantSidebarCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/components/primitives.tsx:RestaurantFacts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/components/primitives.tsx:Modal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:DiscoveryHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/features/discovery/components/food-map.tsx:Empty",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "target": "file:apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "target": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

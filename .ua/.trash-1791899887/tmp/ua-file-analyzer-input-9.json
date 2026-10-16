@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "D:/GR2/hust_foodmap",
+    "batchImportData":  {
+                            ".ua/.understandignore":  [
+
+                                                      ],
+                            ".ua/config.json":  [
+
+                                                ],
+                            "apps/api/test/restaurants.test.cjs":  [
+
+                                                                   ],
+                            "apps/web/next-env.d.ts":  [
+
+                                                       ],
+                            "apps/web/next.config.ts":  [
+
+                                                        ],
+                            "apps/web/postcss.config.mjs":  [
+
+                                                            ],
+                            "apps/web/public/images/optimized/banhmi-128.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/banhmi-256.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/banhmi-512.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/banhmi-768.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/coffee-128.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/coffee-256.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/coffee-512.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/coffee-768.webp":  [
+
+                                                                                 ],
+                            "apps/web/public/images/optimized/noodles-128.webp":  [
+
+                                                                                  ],
+                            "apps/web/public/images/optimized/noodles-256.webp":  [
+
+                                                                                  ],
+                            "apps/web/public/images/optimized/noodles-512.webp":  [
+
+                                                                                  ],
+                            "apps/web/public/images/optimized/noodles-768.webp":  [
+
+                                                                                  ],
+                            "apps/web/public/images/optimized/pho-128.webp":  [
+
+                                                                              ],
+                            "apps/web/public/images/optimized/pho-256.webp":  [
+
+                                                                              ],
+                            "apps/web/public/images/optimized/pho-512.webp":  [
+
+                                                                              ],
+                            "apps/web/public/images/optimized/pho-768.webp":  [
+
+                                                                              ],
+                            "apps/web/public/images/optimized/rice-128.webp":  [
+
+                                                                               ],
+                            "apps/web/public/images/optimized/rice-256.webp":  [
+
+                                                                               ],
+                            "apps/web/public/images/optimized/rice-512.webp":  [
+
+                                                                               ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  ".ua/.understandignore",
+                           "language":  "unknown",
+                           "sizeLines":  75,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  ".ua/config.json",
+                           "language":  "json",
+                           "sizeLines":  1,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "apps/api/test/restaurants.test.cjs",
+                           "language":  "javascript",
+                           "sizeLines":  93,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/next-env.d.ts",
+                           "language":  "typescript",
+                           "sizeLines":  7,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/next.config.ts",
+                           "language":  "typescript",
+                           "sizeLines":  21,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/postcss.config.mjs",
+                           "language":  "javascript",
+                           "sizeLines":  1,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/banhmi-128.webp",
+                           "language":  "webp",
+                           "sizeLines":  13,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/banhmi-256.webp",
+                           "language":  "webp",
+                           "sizeLines":  34,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/banhmi-512.webp",
+                           "language":  "webp",
+                           "sizeLines":  105,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/banhmi-768.webp",
+                           "language":  "webp",
+                           "sizeLines":  144,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/coffee-128.webp",
+                           "language":  "webp",
+                           "sizeLines":  29,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/coffee-256.webp",
+                           "language":  "webp",
+                           "sizeLines":  63,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/coffee-512.webp",
+                           "language":  "webp",
+                           "sizeLines":  162,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/coffee-768.webp",
+                           "language":  "webp",
+                           "sizeLines":  235,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/noodles-128.webp",
+                           "language":  "webp",
+                           "sizeLines":  21,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/noodles-256.webp",
+                           "language":  "webp",
+                           "sizeLines":  62,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/noodles-512.webp",
+                           "language":  "webp",
+                           "sizeLines":  193,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/noodles-768.webp",
+                           "language":  "webp",
+                           "sizeLines":  252,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/pho-128.webp",
+                           "language":  "webp",
+                           "sizeLines":  18,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/pho-256.webp",
+                           "language":  "webp",
+                           "sizeLines":  66,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/pho-512.webp",
+                           "language":  "webp",
+                           "sizeLines":  222,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/pho-768.webp",
+                           "language":  "webp",
+                           "sizeLines":  299,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/rice-128.webp",
+                           "language":  "webp",
+                           "sizeLines":  10,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/rice-256.webp",
+                           "language":  "webp",
+                           "sizeLines":  37,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/public/images/optimized/rice-512.webp",
+                           "language":  "webp",
+                           "sizeLines":  117,
+                           "fileCategory":  "code"
+                       }
+                   ]
+}

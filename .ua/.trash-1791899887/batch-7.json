@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/api/.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": "apps/api/.env.example",
+      "summary": "Lists sample API listener host/port and allowed development CORS origins.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "workspace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/api/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/api/package.json",
+      "summary": "Defines NestJS runtime dependencies and TypeScript build/watch scripts, including compiled HTTP tests executed by the Node test runner.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "workspace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/api/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/api/tsconfig.json",
+      "summary": "Configures strict ES2022 CommonJS compilation from src to dist, enabling decorators, emitted decorator metadata, and source maps.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "workspace"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/api/.env.example",
+      "target": "file:apps/api/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/api/.env.example",
+      "target": "file:apps/api/src/create-app.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/api/tsconfig.json",
+      "target": "file:apps/api/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/api/package.json",
+      "target": "file:apps/api/src/main.ts",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

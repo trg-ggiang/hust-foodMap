@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "config:apps/web/.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": "apps/web/.env.example",
+      "summary": "Documents public browser API/map settings and a separate private backend origin for server catalog loading and API rewrites.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "workspace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:apps/web/AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "apps/web/AGENTS.md",
+      "summary": "Contains Next.js-generated guidance to consult bundled version-specific documentation and preserve the automatically maintained agent-rules block.",
+      "tags": [
+        "documentation",
+        "architecture",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/web/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "apps/web/package.json",
+      "summary": "Declares Next.js, React, MapLibre, UI dependencies, and asset preparation before development/build; defines frontend serving and typechecking commands.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "workspace"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:apps/web/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "apps/web/tsconfig.json",
+      "summary": "Configures strict no-emit frontend typechecking with Bundler resolution, React JSX, Next.js generated types, and the @/* source alias.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "workspace"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:apps/web/tsconfig.json",
+      "target": "file:apps/web/src/app/page.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:apps/web/package.json",
+      "target": "file:apps/web/src/app/page.tsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

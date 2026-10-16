@@ -1,0 +1,886 @@
+{
+  "name": "hust-foodmap",
+  "description": "A food discovery application for HUST students, with an independent Next.js and React frontend and NestJS backend in an npm workspace sharing TypeScript data types. The frontend provides search, filters, a sidebar, and an interactive map. Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "config",
+    "css",
+    "javascript",
+    "json",
+    "markdown",
+    "python",
+    "tsbuildinfo",
+    "typescript",
+    "unknown",
+    "webp",
+    "yaml"
+  ],
+  "frameworks": [
+    "React",
+    "Next.js",
+    "NestJS",
+    "Tailwind CSS",
+    "MapLibre GL"
+  ],
+  "files": [
+    {
+      "path": ".playwright-cli/page-2026-10-11T18-04-41-629Z.yml",
+      "language": "yaml",
+      "sizeLines": 169,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-11T18-05-48-610Z.yml",
+      "language": "yaml",
+      "sizeLines": 168,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-11T18-06-31-178Z.yml",
+      "language": "yaml",
+      "sizeLines": 214,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-11T18-08-15-842Z.yml",
+      "language": "yaml",
+      "sizeLines": 197,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-11T18-10-23-424Z.yml",
+      "language": "yaml",
+      "sizeLines": 241,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-11T18-13-16-927Z.yml",
+      "language": "yaml",
+      "sizeLines": 144,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-11T18-36-14-451Z.yml",
+      "language": "yaml",
+      "sizeLines": 180,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-11T19-13-47-740Z.yml",
+      "language": "yaml",
+      "sizeLines": 178,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-12T03-59-50-440Z.yml",
+      "language": "yaml",
+      "sizeLines": 178,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-cli/page-2026-10-12T11-47-23-161Z.yml",
+      "language": "yaml",
+      "sizeLines": 152,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".ua/.understandignore",
+      "language": "unknown",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".ua/config.json",
+      "language": "json",
+      "sizeLines": 1,
+      "fileCategory": "config"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "language": "markdown",
+      "sizeLines": 132,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/api/.env.example",
+      "language": "config",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api/package.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/api/src/app.module.ts",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/create-app.ts",
+      "language": "typescript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/main.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurant-query.dto.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurant.fixtures.ts",
+      "language": "typescript",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurants.controller.ts",
+      "language": "typescript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurants.module.ts",
+      "language": "typescript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/src/restaurants/restaurants.service.ts",
+      "language": "typescript",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/test/restaurants.test.cjs",
+      "language": "javascript",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/api/tsconfig.json",
+      "language": "json",
+      "sizeLines": 17,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/web/.env.example",
+      "language": "config",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/web/AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "apps/web/next-env.d.ts",
+      "language": "typescript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/next.config.ts",
+      "language": "typescript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/package.json",
+      "language": "json",
+      "sizeLines": 37,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/web/postcss.config.mjs",
+      "language": "javascript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/banhmi-128.webp",
+      "language": "webp",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/banhmi-256.webp",
+      "language": "webp",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/banhmi-512.webp",
+      "language": "webp",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/banhmi-768.webp",
+      "language": "webp",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/coffee-128.webp",
+      "language": "webp",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/coffee-256.webp",
+      "language": "webp",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/coffee-512.webp",
+      "language": "webp",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/coffee-768.webp",
+      "language": "webp",
+      "sizeLines": 235,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/noodles-128.webp",
+      "language": "webp",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/noodles-256.webp",
+      "language": "webp",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/noodles-512.webp",
+      "language": "webp",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/noodles-768.webp",
+      "language": "webp",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/pho-128.webp",
+      "language": "webp",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/pho-256.webp",
+      "language": "webp",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/pho-512.webp",
+      "language": "webp",
+      "sizeLines": 222,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/pho-768.webp",
+      "language": "webp",
+      "sizeLines": 299,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/rice-128.webp",
+      "language": "webp",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/rice-256.webp",
+      "language": "webp",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/rice-512.webp",
+      "language": "webp",
+      "sizeLines": 117,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/rice-768.webp",
+      "language": "webp",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/veggie-128.webp",
+      "language": "webp",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/veggie-256.webp",
+      "language": "webp",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/veggie-512.webp",
+      "language": "webp",
+      "sizeLines": 137,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/images/optimized/veggie-768.webp",
+      "language": "webp",
+      "sizeLines": 207,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/public/maplibre-gl-worker.mjs",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/scripts/prepare-images.mjs",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/scripts/prepare-map-worker.mjs",
+      "language": "javascript",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/app/error.tsx",
+      "language": "typescript",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/app/food-map.css",
+      "language": "css",
+      "sizeLines": 538,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/web/src/app/globals.css",
+      "language": "css",
+      "sizeLines": 1706,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "apps/web/src/app/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/app/loading.tsx",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/app/page.tsx",
+      "language": "typescript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/components/food-image.tsx",
+      "language": "typescript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/components/primitives.tsx",
+      "language": "typescript",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/catalog-client.tsx",
+      "language": "typescript",
+      "sizeLines": 56,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/catalog-status.tsx",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/discovery-map.tsx",
+      "language": "typescript",
+      "sizeLines": 469,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/food-map.tsx",
+      "language": "typescript",
+      "sizeLines": 1127,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "language": "typescript",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "language": "typescript",
+      "sizeLines": 124,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "language": "typescript",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/features/discovery/model/discovery-query.ts",
+      "language": "typescript",
+      "sizeLines": 183,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/lib/api.ts",
+      "language": "typescript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/lib/contracts.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/lib/data.ts",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/lib/map-provider.ts",
+      "language": "typescript",
+      "sizeLines": 258,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/src/lib/server/restaurants.ts",
+      "language": "typescript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "apps/web/tsconfig.json",
+      "language": "json",
+      "sizeLines": 33,
+      "fileCategory": "config"
+    },
+    {
+      "path": "apps/web/tsconfig.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/dark-map-checks.js",
+      "language": "javascript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/desktop-only.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/dev-smoke.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/edge-checks.js",
+      "language": "javascript",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/filter-edge-checks.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/filter-location-checks.js",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/inspect-migration.js",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/laptop-fit.js",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/lighthouse-final.json",
+      "language": "json",
+      "sizeLines": 10514,
+      "fileCategory": "config"
+    },
+    {
+      "path": "output/playwright/lighthouse.json",
+      "language": "json",
+      "sizeLines": 10886,
+      "fileCategory": "config"
+    },
+    {
+      "path": "output/playwright/map-refresh-check.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/migration-checks.js",
+      "language": "javascript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/next-accessibility.js",
+      "language": "javascript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/next-checks.js",
+      "language": "javascript",
+      "sizeLines": 40,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/next-production.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/rice-filter-check.js",
+      "language": "javascript",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/rice-legacy-catalog.js",
+      "language": "javascript",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/semi-3d-checks.js",
+      "language": "javascript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/semi-3d-review.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/sidebar-half.js",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/verify.js",
+      "language": "javascript",
+      "sizeLines": 106,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/zoom-diagnose.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/playwright/zoom-verify.js",
+      "language": "javascript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/refactor-discovery.py",
+      "language": "python",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "output/refine-styles.py",
+      "language": "python",
+      "sizeLines": 211,
+      "fileCategory": "code"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 30,
+      "fileCategory": "config"
+    },
+    {
+      "path": "packages/contracts/food-groups.d.ts",
+      "language": "typescript",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/food-groups.js",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/index.d.ts",
+      "language": "typescript",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "language": "tsbuildinfo",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 115,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "moderate",
+  "importMap": {
+    ".playwright-cli/page-2026-10-11T18-04-41-629Z.yml": [],
+    ".playwright-cli/page-2026-10-11T18-05-48-610Z.yml": [],
+    ".playwright-cli/page-2026-10-11T18-06-31-178Z.yml": [],
+    ".playwright-cli/page-2026-10-11T18-08-15-842Z.yml": [],
+    ".playwright-cli/page-2026-10-11T18-10-23-424Z.yml": [],
+    ".playwright-cli/page-2026-10-11T18-13-16-927Z.yml": [],
+    ".playwright-cli/page-2026-10-11T18-36-14-451Z.yml": [],
+    ".playwright-cli/page-2026-10-11T19-13-47-740Z.yml": [],
+    ".playwright-cli/page-2026-10-12T03-59-50-440Z.yml": [],
+    ".playwright-cli/page-2026-10-12T11-47-23-161Z.yml": [],
+    ".ua/.understandignore": [],
+    ".ua/config.json": [],
+    "AGENTS.md": [],
+    "README.md": [],
+    "VERIFICATION.md": [],
+    "apps/api/.env.example": [],
+    "apps/api/package.json": [],
+    "apps/api/src/app.module.ts": [
+      "apps/api/src/restaurants/restaurants.module.ts"
+    ],
+    "apps/api/src/create-app.ts": [
+      "apps/api/src/app.module.ts"
+    ],
+    "apps/api/src/main.ts": [
+      "apps/api/src/create-app.ts"
+    ],
+    "apps/api/src/restaurants/restaurant-query.dto.ts": [],
+    "apps/api/src/restaurants/restaurant.fixtures.ts": [],
+    "apps/api/src/restaurants/restaurants.controller.ts": [
+      "apps/api/src/restaurants/restaurant-query.dto.ts",
+      "apps/api/src/restaurants/restaurants.service.ts"
+    ],
+    "apps/api/src/restaurants/restaurants.module.ts": [
+      "apps/api/src/restaurants/restaurants.controller.ts",
+      "apps/api/src/restaurants/restaurants.service.ts"
+    ],
+    "apps/api/src/restaurants/restaurants.service.ts": [
+      "apps/api/src/restaurants/restaurant-query.dto.ts",
+      "apps/api/src/restaurants/restaurant.fixtures.ts"
+    ],
+    "apps/api/test/restaurants.test.cjs": [],
+    "apps/api/tsconfig.json": [],
+    "apps/web/.env.example": [],
+    "apps/web/AGENTS.md": [],
+    "apps/web/next-env.d.ts": [],
+    "apps/web/next.config.ts": [],
+    "apps/web/package.json": [],
+    "apps/web/postcss.config.mjs": [],
+    "apps/web/public/images/optimized/banhmi-128.webp": [],
+    "apps/web/public/images/optimized/banhmi-256.webp": [],
+    "apps/web/public/images/optimized/banhmi-512.webp": [],
+    "apps/web/public/images/optimized/banhmi-768.webp": [],
+    "apps/web/public/images/optimized/coffee-128.webp": [],
+    "apps/web/public/images/optimized/coffee-256.webp": [],
+    "apps/web/public/images/optimized/coffee-512.webp": [],
+    "apps/web/public/images/optimized/coffee-768.webp": [],
+    "apps/web/public/images/optimized/noodles-128.webp": [],
+    "apps/web/public/images/optimized/noodles-256.webp": [],
+    "apps/web/public/images/optimized/noodles-512.webp": [],
+    "apps/web/public/images/optimized/noodles-768.webp": [],
+    "apps/web/public/images/optimized/pho-128.webp": [],
+    "apps/web/public/images/optimized/pho-256.webp": [],
+    "apps/web/public/images/optimized/pho-512.webp": [],
+    "apps/web/public/images/optimized/pho-768.webp": [],
+    "apps/web/public/images/optimized/rice-128.webp": [],
+    "apps/web/public/images/optimized/rice-256.webp": [],
+    "apps/web/public/images/optimized/rice-512.webp": [],
+    "apps/web/public/images/optimized/rice-768.webp": [],
+    "apps/web/public/images/optimized/veggie-128.webp": [],
+    "apps/web/public/images/optimized/veggie-256.webp": [],
+    "apps/web/public/images/optimized/veggie-512.webp": [],
+    "apps/web/public/images/optimized/veggie-768.webp": [],
+    "apps/web/public/maplibre-gl-worker.mjs": [],
+    "apps/web/scripts/prepare-images.mjs": [],
+    "apps/web/scripts/prepare-map-worker.mjs": [],
+    "apps/web/src/app/error.tsx": [
+      "apps/web/src/features/discovery/components/catalog-status.tsx"
+    ],
+    "apps/web/src/app/food-map.css": [],
+    "apps/web/src/app/globals.css": [],
+    "apps/web/src/app/layout.tsx": [
+      "apps/web/src/app/food-map.css",
+      "apps/web/src/app/globals.css"
+    ],
+    "apps/web/src/app/loading.tsx": [
+      "apps/web/src/features/discovery/components/catalog-status.tsx"
+    ],
+    "apps/web/src/app/page.tsx": [
+      "apps/web/src/features/discovery/components/catalog-client.tsx",
+      "apps/web/src/lib/server/restaurants.ts"
+    ],
+    "apps/web/src/components/food-image.tsx": [],
+    "apps/web/src/components/primitives.tsx": [
+      "apps/web/src/components/food-image.tsx",
+      "apps/web/src/lib/data.ts"
+    ],
+    "apps/web/src/features/discovery/components/catalog-client.tsx": [
+      "apps/web/src/features/discovery/components/catalog-status.tsx",
+      "apps/web/src/features/discovery/components/food-map.tsx",
+      "apps/web/src/lib/api.ts"
+    ],
+    "apps/web/src/features/discovery/components/catalog-status.tsx": [],
+    "apps/web/src/features/discovery/components/discovery-map.tsx": [
+      "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "apps/web/src/lib/data.ts",
+      "apps/web/src/lib/map-provider.ts"
+    ],
+    "apps/web/src/features/discovery/components/discovery-navigation.tsx": [],
+    "apps/web/src/features/discovery/components/food-map.tsx": [
+      "apps/web/src/components/food-image.tsx",
+      "apps/web/src/components/primitives.tsx",
+      "apps/web/src/features/discovery/components/discovery-navigation.tsx",
+      "apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "apps/web/src/features/discovery/hooks/use-user-location.ts",
+      "apps/web/src/features/discovery/model/discovery-query.ts",
+      "apps/web/src/lib/data.ts"
+    ],
+    "apps/web/src/features/discovery/components/restaurant-markers.tsx": [
+      "apps/web/src/components/food-image.tsx",
+      "apps/web/src/lib/data.ts"
+    ],
+    "apps/web/src/features/discovery/hooks/use-discovery-query.ts": [
+      "apps/web/src/features/discovery/model/discovery-query.ts"
+    ],
+    "apps/web/src/features/discovery/hooks/use-user-location.ts": [],
+    "apps/web/src/features/discovery/model/discovery-query.ts": [],
+    "apps/web/src/lib/api.ts": [],
+    "apps/web/src/lib/contracts.ts": [],
+    "apps/web/src/lib/data.ts": [],
+    "apps/web/src/lib/map-provider.ts": [],
+    "apps/web/src/lib/server/restaurants.ts": [],
+    "apps/web/tsconfig.json": [],
+    "apps/web/tsconfig.tsbuildinfo": [],
+    "output/playwright/dark-map-checks.js": [],
+    "output/playwright/desktop-only.js": [],
+    "output/playwright/dev-smoke.js": [],
+    "output/playwright/edge-checks.js": [],
+    "output/playwright/filter-edge-checks.js": [],
+    "output/playwright/filter-location-checks.js": [],
+    "output/playwright/inspect-migration.js": [],
+    "output/playwright/laptop-fit.js": [],
+    "output/playwright/lighthouse-final.json": [],
+    "output/playwright/lighthouse.json": [],
+    "output/playwright/map-refresh-check.js": [],
+    "output/playwright/migration-checks.js": [],
+    "output/playwright/next-accessibility.js": [],
+    "output/playwright/next-checks.js": [],
+    "output/playwright/next-production.js": [],
+    "output/playwright/rice-filter-check.js": [],
+    "output/playwright/rice-legacy-catalog.js": [],
+    "output/playwright/semi-3d-checks.js": [],
+    "output/playwright/semi-3d-review.js": [],
+    "output/playwright/sidebar-half.js": [],
+    "output/playwright/verify.js": [],
+    "output/playwright/zoom-diagnose.js": [],
+    "output/playwright/zoom-verify.js": [],
+    "output/refactor-discovery.py": [],
+    "output/refine-styles.py": [],
+    "package.json": [],
+    "packages/contracts/food-groups.d.ts": [],
+    "packages/contracts/food-groups.js": [],
+    "packages/contracts/index.d.ts": [],
+    "packages/contracts/package.json": [],
+    "tsconfig.tsbuildinfo": []
+  }
+}

@@ -1,0 +1,1285 @@
+{
+  "scriptCompleted": true,
+  "entryPointCandidates": [
+    {
+      "id": "document:README.md",
+      "score": 5,
+      "name": "README.md",
+      "summary": "Explains the Next.js/React and NestJS workspace architecture, local setup, build commands, restaurant endpoints, environment configuration, and sample-data limitations."
+    },
+    {
+      "id": "file:apps/api/src/main.ts",
+      "score": 3,
+      "name": "main.ts",
+      "summary": "Bootstraps the API on environment-controlled host and port, reporting startup failure through stderr and process exit status."
+    },
+    {
+      "id": "document:AGENTS.md",
+      "score": 2,
+      "name": "AGENTS.md",
+      "summary": "Documents workspace architecture, server/client boundaries, sample data ownership, desktop layout expectations, and required development verification."
+    },
+    {
+      "id": "document:VERIFICATION.md",
+      "score": 2,
+      "name": "VERIFICATION.md",
+      "summary": "Records current and historical browser, API, build, accessibility, layout, map, and food-group verification evidence with integration limitations."
+    },
+    {
+      "id": "file:.ua/.understandignore",
+      "score": 2,
+      "name": ".understandignore",
+      "summary": "Self-generated Understand Anything analysis configuration listing suggested ignore patterns for generated output, browser snapshots, vendor assets and tests; all suggested exclusions remain commented out."
+    }
+  ],
+  "fanInRanking": [
+    {
+      "id": "file:packages/contracts/index.d.ts",
+      "fanIn": 9,
+      "name": "index.d.ts"
+    },
+    {
+      "id": "file:apps/api/test/restaurants.test.cjs",
+      "fanIn": 7,
+      "name": "restaurants.test.cjs"
+    },
+    {
+      "id": "function:apps/web/src/components/food-image.tsx:FoodImage",
+      "fanIn": 5,
+      "name": "FoodImage"
+    },
+    {
+      "id": "file:apps/api/src/main.ts",
+      "fanIn": 4,
+      "name": "main.ts"
+    },
+    {
+      "id": "file:apps/web/src/lib/data.ts",
+      "fanIn": 4,
+      "name": "data.ts"
+    },
+    {
+      "id": "file:packages/contracts/food-groups.js",
+      "fanIn": 4,
+      "name": "food-groups.js"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/catalog-status.tsx:CatalogStatus",
+      "fanIn": 4,
+      "name": "CatalogStatus"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes",
+      "fanIn": 4,
+      "name": "getWalkingMinutes"
+    },
+    {
+      "id": "function:apps/web/src/lib/data.ts:compactPrice",
+      "fanIn": 4,
+      "name": "compactPrice"
+    },
+    {
+      "id": "file:apps/api/src/create-app.ts",
+      "fanIn": 3,
+      "name": "create-app.ts"
+    },
+    {
+      "id": "file:apps/web/src/app/page.tsx",
+      "fanIn": 3,
+      "name": "page.tsx"
+    },
+    {
+      "id": "file:apps/web/src/components/food-image.tsx",
+      "fanIn": 3,
+      "name": "food-image.tsx"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/catalog-status.tsx",
+      "fanIn": 3,
+      "name": "catalog-status.tsx"
+    },
+    {
+      "id": "function:apps/web/src/components/primitives.tsx:RestaurantFacts",
+      "fanIn": 3,
+      "name": "RestaurantFacts"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:searchResultHighlightState",
+      "fanIn": 3,
+      "name": "searchResultHighlightState"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:createDefaultDiscoveryQuery",
+      "fanIn": 3,
+      "name": "createDefaultDiscoveryQuery"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes",
+      "fanIn": 3,
+      "name": "getMealMinutes"
+    },
+    {
+      "id": "function:apps/web/src/lib/map-provider.ts:getMapProvider",
+      "fanIn": 3,
+      "name": "getMapProvider"
+    },
+    {
+      "id": "function:packages/contracts/food-groups.js:matchesFoodGroup",
+      "fanIn": 3,
+      "name": "matchesFoodGroup"
+    },
+    {
+      "id": "class:apps/api/src/restaurants/restaurants.service.ts:RestaurantsService",
+      "fanIn": 2,
+      "name": "RestaurantsService"
+    }
+  ],
+  "fanOutRanking": [
+    {
+      "id": "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap",
+      "fanOut": 17,
+      "name": "FoodMap"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/food-map.tsx",
+      "fanOut": 11,
+      "name": "food-map.tsx"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/model/discovery-query.ts",
+      "fanOut": 9,
+      "name": "discovery-query.ts"
+    },
+    {
+      "id": "file:apps/api/src/restaurants/restaurants.service.ts",
+      "fanOut": 7,
+      "name": "restaurants.service.ts"
+    },
+    {
+      "id": "file:apps/web/src/components/primitives.tsx",
+      "fanOut": 5,
+      "name": "primitives.tsx"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/catalog-client.tsx",
+      "fanOut": 5,
+      "name": "catalog-client.tsx"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/restaurant-markers.tsx",
+      "fanOut": 5,
+      "name": "restaurant-markers.tsx"
+    },
+    {
+      "id": "file:apps/web/src/lib/data.ts",
+      "fanOut": 5,
+      "name": "data.ts"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap",
+      "fanOut": 5,
+      "name": "DiscoveryMap"
+    },
+    {
+      "id": "file:apps/api/src/restaurants/restaurants.controller.ts",
+      "fanOut": 4,
+      "name": "restaurants.controller.ts"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/components/discovery-map.tsx",
+      "fanOut": 4,
+      "name": "discovery-map.tsx"
+    },
+    {
+      "id": "function:apps/web/src/features/discovery/components/catalog-client.tsx:CatalogClient",
+      "fanOut": 4,
+      "name": "CatalogClient"
+    },
+    {
+      "id": "file:apps/api/src/app.module.ts",
+      "fanOut": 3,
+      "name": "app.module.ts"
+    },
+    {
+      "id": "file:apps/api/src/create-app.ts",
+      "fanOut": 3,
+      "name": "create-app.ts"
+    },
+    {
+      "id": "file:apps/api/src/restaurants/restaurants.module.ts",
+      "fanOut": 3,
+      "name": "restaurants.module.ts"
+    },
+    {
+      "id": "file:apps/api/test/restaurants.test.cjs",
+      "fanOut": 3,
+      "name": "restaurants.test.cjs"
+    },
+    {
+      "id": "file:apps/web/src/app/layout.tsx",
+      "fanOut": 3,
+      "name": "layout.tsx"
+    },
+    {
+      "id": "file:apps/web/src/app/page.tsx",
+      "fanOut": 3,
+      "name": "page.tsx"
+    },
+    {
+      "id": "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts",
+      "fanOut": 3,
+      "name": "use-discovery-query.ts"
+    },
+    {
+      "id": "file:apps/web/src/lib/map-provider.ts",
+      "fanOut": 3,
+      "name": "map-provider.ts"
+    }
+  ],
+  "bfsTraversal": {
+    "startNode": "file:apps/api/src/main.ts",
+    "order": [
+      "file:apps/api/src/main.ts",
+      "file:apps/api/src/create-app.ts",
+      "file:apps/api/src/app.module.ts",
+      "file:apps/api/src/restaurants/restaurants.module.ts",
+      "file:apps/api/src/restaurants/restaurants.controller.ts",
+      "file:apps/api/src/restaurants/restaurants.service.ts",
+      "file:apps/api/src/restaurants/restaurant-query.dto.ts",
+      "file:apps/api/src/restaurants/restaurant.fixtures.ts",
+      "function:packages/contracts/food-groups.js:matchesFoodGroup"
+    ],
+    "depthMap": {
+      "file:apps/api/src/main.ts": 0,
+      "file:apps/api/src/create-app.ts": 1,
+      "file:apps/api/src/app.module.ts": 2,
+      "file:apps/api/src/restaurants/restaurants.module.ts": 3,
+      "file:apps/api/src/restaurants/restaurants.controller.ts": 4,
+      "file:apps/api/src/restaurants/restaurants.service.ts": 4,
+      "file:apps/api/src/restaurants/restaurant-query.dto.ts": 5,
+      "file:apps/api/src/restaurants/restaurant.fixtures.ts": 5,
+      "function:packages/contracts/food-groups.js:matchesFoodGroup": 5
+    },
+    "byDepth": {
+      "0": [
+        "file:apps/api/src/main.ts"
+      ],
+      "1": [
+        "file:apps/api/src/create-app.ts"
+      ],
+      "2": [
+        "file:apps/api/src/app.module.ts"
+      ],
+      "3": [
+        "file:apps/api/src/restaurants/restaurants.module.ts"
+      ],
+      "4": [
+        "file:apps/api/src/restaurants/restaurants.controller.ts",
+        "file:apps/api/src/restaurants/restaurants.service.ts"
+      ],
+      "5": [
+        "file:apps/api/src/restaurants/restaurant-query.dto.ts",
+        "file:apps/api/src/restaurants/restaurant.fixtures.ts",
+        "function:packages/contracts/food-groups.js:matchesFoodGroup"
+      ]
+    }
+  },
+  "nonCodeFiles": {
+    "documentation": [
+      {
+        "id": "document:AGENTS.md",
+        "name": "AGENTS.md",
+        "type": "document",
+        "summary": "Documents workspace architecture, server/client boundaries, sample data ownership, desktop layout expectations, and required development verification."
+      },
+      {
+        "id": "document:README.md",
+        "name": "README.md",
+        "type": "document",
+        "summary": "Explains the Next.js/React and NestJS workspace architecture, local setup, build commands, restaurant endpoints, environment configuration, and sample-data limitations."
+      },
+      {
+        "id": "document:VERIFICATION.md",
+        "name": "VERIFICATION.md",
+        "type": "document",
+        "summary": "Records current and historical browser, API, build, accessibility, layout, map, and food-group verification evidence with integration limitations."
+      },
+      {
+        "id": "document:apps/web/AGENTS.md",
+        "name": "AGENTS.md",
+        "type": "document",
+        "summary": "Contains Next.js-generated guidance to consult bundled version-specific documentation and preserve the automatically maintained agent-rules block."
+      }
+    ],
+    "infrastructure": [],
+    "data": [],
+    "config": [
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T18-04-41-629Z.yml",
+        "name": "page-2026-10-11T18-04-41-629Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T18-05-48-610Z.yml",
+        "name": "page-2026-10-11T18-05-48-610Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T18-06-31-178Z.yml",
+        "name": "page-2026-10-11T18-06-31-178Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T18-08-15-842Z.yml",
+        "name": "page-2026-10-11T18-08-15-842Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T18-10-23-424Z.yml",
+        "name": "page-2026-10-11T18-10-23-424Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards. Captures the meal filter dialog state."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T18-13-16-927Z.yml",
+        "name": "page-2026-10-11T18-13-16-927Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T18-36-14-451Z.yml",
+        "name": "page-2026-10-11T18-36-14-451Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-11T19-13-47-740Z.yml",
+        "name": "page-2026-10-11T19-13-47-740Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-12T03-59-50-440Z.yml",
+        "name": "page-2026-10-12T03-59-50-440Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:.playwright-cli/page-2026-10-12T11-47-23-161Z.yml",
+        "name": "page-2026-10-12T11-47-23-161Z.yml",
+        "type": "config",
+        "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards."
+      },
+      {
+        "id": "config:package.json",
+        "name": "package.json",
+        "type": "config",
+        "summary": "Defines the root npm workspaces, Node engine requirement, coordinated development/start commands, and workspace build, typecheck, and API test scripts."
+      },
+      {
+        "id": "config:apps/api/.env.example",
+        "name": ".env.example",
+        "type": "config",
+        "summary": "Lists sample API listener host/port and allowed development CORS origins."
+      },
+      {
+        "id": "config:apps/api/package.json",
+        "name": "package.json",
+        "type": "config",
+        "summary": "Defines NestJS runtime dependencies and TypeScript build/watch scripts, including compiled HTTP tests executed by the Node test runner."
+      },
+      {
+        "id": "config:apps/api/tsconfig.json",
+        "name": "tsconfig.json",
+        "type": "config",
+        "summary": "Configures strict ES2022 CommonJS compilation from src to dist, enabling decorators, emitted decorator metadata, and source maps."
+      },
+      {
+        "id": "config:apps/web/.env.example",
+        "name": ".env.example",
+        "type": "config",
+        "summary": "Documents public browser API/map settings and a separate private backend origin for server catalog loading and API rewrites."
+      },
+      {
+        "id": "config:apps/web/package.json",
+        "name": "package.json",
+        "type": "config",
+        "summary": "Declares Next.js, React, MapLibre, UI dependencies, and asset preparation before development/build; defines frontend serving and typechecking commands."
+      },
+      {
+        "id": "config:apps/web/tsconfig.json",
+        "name": "tsconfig.json",
+        "type": "config",
+        "summary": "Configures strict no-emit frontend typechecking with Bundler resolution, React JSX, Next.js generated types, and the @/* source alias."
+      },
+      {
+        "id": "config:.ua/config.json",
+        "name": "config.json",
+        "type": "config",
+        "summary": "Selects English output for the Understand Anything analysis."
+      },
+      {
+        "id": "config:output/playwright/lighthouse-final.json",
+        "name": "lighthouse-final.json",
+        "type": "config",
+        "summary": "Generated Lighthouse 13.5.0 audit report for http://localhost:3001/, containing performance, accessibility and page diagnostic results from 2026-10-11T18:23:31.133Z."
+      },
+      {
+        "id": "config:output/playwright/lighthouse.json",
+        "name": "lighthouse.json",
+        "type": "config",
+        "summary": "Generated Lighthouse 13.5.0 audit report for http://localhost:3001/, containing performance, accessibility and page diagnostic results from 2026-10-11T18:14:13.423Z."
+      },
+      {
+        "id": "config:packages/contracts/package.json",
+        "name": "package.json",
+        "type": "config",
+        "summary": "Declares the private shared contracts workspace and its index.d.ts type entry point."
+      }
+    ]
+  },
+  "clusters": [],
+  "layers": {
+    "count": 7,
+    "list": [
+      {
+        "id": "layer:web-entry",
+        "name": "Next.js Routes And Catalog Loading",
+        "description": "Next.js document and route states coordinate initial server catalog loading and recoverable client retries."
+      },
+      {
+        "id": "layer:discovery",
+        "name": "Discovery And Client Map",
+        "description": "React discovery components, query and geolocation hooks, map rendering and styles support filtering, selection and local trial planning."
+      },
+      {
+        "id": "layer:api",
+        "name": "NestJS Sample Catalog API",
+        "description": "NestJS bootstrap, validation, controllers, services and fixtures expose health and restaurant discovery backed by illustrative sample records."
+      },
+      {
+        "id": "layer:contracts",
+        "name": "Shared Restaurant Contracts",
+        "description": "Workspace declarations and food-group matching define the restaurant envelopes and shared category semantics used by the API and frontend."
+      },
+      {
+        "id": "layer:tooling",
+        "name": "Project Tooling And Documentation",
+        "description": "Workspace manifests, environment and compiler configuration, build preparation and project guides support development and analysis."
+      },
+      {
+        "id": "layer:assets",
+        "name": "Generated Runtime Assets",
+        "description": "Responsive food images and the copied MapLibre worker are public runtime assets; generated declarations and compiler caches support builds."
+      },
+      {
+        "id": "layer:verification",
+        "name": "Verification And Historical Artifacts",
+        "description": "API tests, browser regression and diagnostic scripts, Lighthouse reports, snapshots and one-off transformation scripts record validation and migration work."
+      }
+    ]
+  },
+  "nodeSummaryIndex": {
+    "file:apps/web/src/components/food-image.tsx": {
+      "summary": "Renders responsive food photographs using optimized WebP variants for recognized local images.",
+      "type": "file",
+      "name": "food-image.tsx"
+    },
+    "function:apps/web/src/components/food-image.tsx:FoodImage": {
+      "summary": "Renders responsive food photographs using optimized WebP variants for recognized local images.",
+      "type": "function",
+      "name": "FoodImage"
+    },
+    "file:apps/web/src/components/primitives.tsx": {
+      "summary": "Provides accessible modal dialogs, restaurant facts and interactive sidebar cards for discovery.",
+      "type": "file",
+      "name": "primitives.tsx"
+    },
+    "function:apps/web/src/components/primitives.tsx:Modal": {
+      "summary": "Wraps Radix Dialog with a title, optional description and close control.",
+      "type": "function",
+      "name": "Modal"
+    },
+    "function:apps/web/src/components/primitives.tsx:RestaurantFacts": {
+      "summary": "Displays restaurant price range, rating, review count and walking duration.",
+      "type": "function",
+      "name": "RestaurantFacts"
+    },
+    "function:apps/web/src/components/primitives.tsx:RestaurantSidebarCard": {
+      "summary": "Displays a selectable restaurant card with saving, hover highlighting and estimated meal duration.",
+      "type": "function",
+      "name": "RestaurantSidebarCard"
+    },
+    "file:apps/web/src/features/discovery/components/discovery-map.tsx": {
+      "summary": "Manages the MapLibre map lifecycle, clustered photo markers, selection, viewport filtering and user location controls.",
+      "type": "file",
+      "name": "discovery-map.tsx"
+    },
+    "function:apps/web/src/features/discovery/components/discovery-map.tsx:DiscoveryMap": {
+      "summary": "Manages the MapLibre map lifecycle, clustered photo markers, selection, viewport filtering and user location controls.",
+      "type": "function",
+      "name": "DiscoveryMap"
+    },
+    "file:apps/web/src/features/discovery/components/discovery-navigation.tsx": {
+      "summary": "Renders the HUST FoodMap brand and desktop navigation for discovery, saved places and meal plans.",
+      "type": "file",
+      "name": "discovery-navigation.tsx"
+    },
+    "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:Brand": {
+      "summary": "Renders the linked HUST FoodMap logo and campus dining tagline.",
+      "type": "function",
+      "name": "Brand"
+    },
+    "function:apps/web/src/features/discovery/components/discovery-navigation.tsx:DiscoveryHeader": {
+      "summary": "Renders navigation counts, theme toggle and local account action in the desktop header.",
+      "type": "function",
+      "name": "DiscoveryHeader"
+    },
+    "file:apps/web/src/features/discovery/components/food-map.tsx": {
+      "summary": "Coordinates the discovery interface, search filters, map selection, saved restaurants and local trial meal planning. Persists saved and planning state locally while keeping location in memory.",
+      "type": "file",
+      "name": "food-map.tsx"
+    },
+    "function:apps/web/src/features/discovery/components/food-map.tsx:FoodMap": {
+      "summary": "Coordinates the discovery interface, search filters, map selection, saved restaurants and local trial meal planning. Persists saved and planning state locally while keeping location in memory.",
+      "type": "function",
+      "name": "FoodMap"
+    },
+    "function:apps/web/src/features/discovery/components/food-map.tsx:Empty": {
+      "summary": "Renders a reusable empty state with icon, explanatory text and optional action.",
+      "type": "function",
+      "name": "Empty"
+    },
+    "file:apps/web/src/features/discovery/components/restaurant-markers.tsx": {
+      "summary": "Renders photo markers and expanded selected restaurant cards with consistent hover and search highlighting.",
+      "type": "file",
+      "name": "restaurant-markers.tsx"
+    },
+    "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:searchResultHighlightState": {
+      "summary": "Prioritizes selected and hovered restaurant states before search match highlighting.",
+      "type": "function",
+      "name": "searchResultHighlightState"
+    },
+    "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:MapRestaurantMarker": {
+      "summary": "Renders an interactive food photo marker with price, rating and hover callbacks.",
+      "type": "function",
+      "name": "MapRestaurantMarker"
+    },
+    "function:apps/web/src/features/discovery/components/restaurant-markers.tsx:ActiveMapRestaurantMarker": {
+      "summary": "Renders the selected restaurant photo card with close and detail actions.",
+      "type": "function",
+      "name": "ActiveMapRestaurantMarker"
+    },
+    "file:apps/web/src/features/discovery/hooks/use-discovery-query.ts": {
+      "summary": "Synchronizes typed discovery state with browser history, validates URL restoration and debounces search updates without server refetching.",
+      "type": "file",
+      "name": "use-discovery-query.ts"
+    },
+    "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:reducer": {
+      "summary": "Restores validated query snapshots or applies typed changes while selecting push or replace history intent.",
+      "type": "function",
+      "name": "reducer"
+    },
+    "function:apps/web/src/features/discovery/hooks/use-discovery-query.ts:useDiscoveryQuery": {
+      "summary": "Synchronizes typed discovery state with browser history, validates URL restoration and debounces search updates without server refetching.",
+      "type": "function",
+      "name": "useDiscoveryQuery"
+    },
+    "file:apps/web/src/features/discovery/hooks/use-user-location.ts": {
+      "summary": "Watches browser geolocation with retry, cancellation and stale callback protection while retaining coordinates only in memory.",
+      "type": "file",
+      "name": "use-user-location.ts"
+    },
+    "function:apps/web/src/features/discovery/hooks/use-user-location.ts:useUserLocation": {
+      "summary": "Watches browser geolocation with retry, cancellation and stale callback protection while retaining coordinates only in memory.",
+      "type": "function",
+      "name": "useUserLocation"
+    },
+    "file:apps/web/src/features/discovery/model/discovery-query.ts": {
+      "summary": "Defines and validates discovery query state, canonical URL serialization, restaurant filters and walking or meal duration estimates.",
+      "type": "file",
+      "name": "discovery-query.ts"
+    },
+    "function:apps/web/src/features/discovery/model/discovery-query.ts:createDefaultDiscoveryQuery": {
+      "summary": "Creates a fresh default discovery state and independent filter object.",
+      "type": "function",
+      "name": "createDefaultDiscoveryQuery"
+    },
+    "function:apps/web/src/features/discovery/model/discovery-query.ts:parseDiscoveryQuery": {
+      "summary": "Validates URL parameters against permitted values and known restaurant IDs before restoring discovery state.",
+      "type": "function",
+      "name": "parseDiscoveryQuery"
+    },
+    "function:apps/web/src/features/discovery/model/discovery-query.ts:serializeDiscoveryQuery": {
+      "summary": "Builds a canonical query string that omits default discovery values.",
+      "type": "function",
+      "name": "serializeDiscoveryQuery"
+    },
+    "function:apps/web/src/features/discovery/model/discovery-query.ts:getActiveFilterCount": {
+      "summary": "Counts enabled budget, walking, duration, rating, opening, crowd and amenity filters.",
+      "type": "function",
+      "name": "getActiveFilterCount"
+    },
+    "function:apps/web/src/features/discovery/model/discovery-query.ts:getWalkingMinutes": {
+      "summary": "Estimates walking time from a current position using straight-line distance or adjusted sample walking times.",
+      "type": "function",
+      "name": "getWalkingMinutes"
+    },
+    "function:apps/web/src/features/discovery/model/discovery-query.ts:getMealMinutes": {
+      "summary": "Combines walking, waiting, dining and return estimates for a complete meal duration.",
+      "type": "function",
+      "name": "getMealMinutes"
+    },
+    "function:apps/web/src/features/discovery/model/discovery-query.ts:selectDiscoveryRestaurants": {
+      "summary": "Filters restaurants by saved state, food group, normalized search, budget, time, rating, amenities and viewport, then sorts results.",
+      "type": "function",
+      "name": "selectDiscoveryRestaurants"
+    },
+    "file:apps/web/src/lib/data.ts": {
+      "summary": "Supplies campus origins and Vietnamese currency, price, text normalization and meal duration utilities.",
+      "type": "file",
+      "name": "data.ts"
+    },
+    "function:apps/web/src/lib/data.ts:money": {
+      "summary": "Formats a numeric amount as Vietnamese dong with no fractional digits.",
+      "type": "function",
+      "name": "money"
+    },
+    "function:apps/web/src/lib/data.ts:compactPrice": {
+      "summary": "Formats a price as a compact thousands value.",
+      "type": "function",
+      "name": "compactPrice"
+    },
+    "function:apps/web/src/lib/data.ts:normalize": {
+      "summary": "Removes Vietnamese diacritics and lowercases text for matching.",
+      "type": "function",
+      "name": "normalize"
+    },
+    "function:apps/web/src/lib/data.ts:mealTime": {
+      "summary": "Adds walking, waiting and dining durations for a meal estimate.",
+      "type": "function",
+      "name": "mealTime"
+    },
+    "file:apps/web/src/lib/map-provider.ts": {
+      "summary": "Selects configured or OpenFreeMap styles with an illustrative offline fallback and applies a restrained dark map theme.",
+      "type": "file",
+      "name": "map-provider.ts"
+    },
+    "function:apps/web/src/lib/map-provider.ts:polygon": {
+      "summary": "Builds illustrative polygon features from local coordinate offsets.",
+      "type": "function",
+      "name": "polygon"
+    },
+    "function:apps/web/src/lib/map-provider.ts:getMapProvider": {
+      "summary": "Selects configured or OpenFreeMap styles with an illustrative offline fallback and applies a restrained dark map theme.",
+      "type": "function",
+      "name": "getMapProvider"
+    },
+    "function:apps/web/src/lib/map-provider.ts:applyDarkMapTheme": {
+      "summary": "Adjusts map layer colors and Vietnamese labels unless an illustrative or dedicated dark style is active.",
+      "type": "function",
+      "name": "applyDarkMapTheme"
+    },
+    "file:apps/web/src/app/error.tsx": {
+      "summary": "Provides the discovery route error boundary with a retry action inside the shared catalog status shell.",
+      "type": "file",
+      "name": "error.tsx"
+    },
+    "function:apps/web/src/app/error.tsx:DiscoveryError": {
+      "summary": "Provides the discovery route error boundary with a retry action inside the shared catalog status shell.",
+      "type": "function",
+      "name": "DiscoveryError"
+    },
+    "file:apps/web/src/app/loading.tsx": {
+      "summary": "Reuses the catalog loading component as the App Router pending route state.",
+      "type": "file",
+      "name": "loading.tsx"
+    },
+    "file:apps/web/src/app/page.tsx": {
+      "summary": "Loads the initial restaurant catalog on the server and passes its recoverable result to the client discovery boundary.",
+      "type": "file",
+      "name": "page.tsx"
+    },
+    "function:apps/web/src/app/page.tsx:DiscoveryPage": {
+      "summary": "Loads the initial restaurant catalog on the server and passes its recoverable result to the client discovery boundary.",
+      "type": "function",
+      "name": "DiscoveryPage"
+    },
+    "file:apps/web/src/features/discovery/components/catalog-client.tsx": {
+      "summary": "Manages ready, loading and recoverable error catalog states with abortable browser retries before mounting discovery.",
+      "type": "file",
+      "name": "catalog-client.tsx"
+    },
+    "function:apps/web/src/features/discovery/components/catalog-client.tsx:CatalogClient": {
+      "summary": "Manages ready, loading and recoverable error catalog states with abortable browser retries before mounting discovery.",
+      "type": "function",
+      "name": "CatalogClient"
+    },
+    "file:apps/web/src/features/discovery/components/catalog-status.tsx": {
+      "summary": "Provides the common catalog status layout and accessible loading message.",
+      "type": "file",
+      "name": "catalog-status.tsx"
+    },
+    "function:apps/web/src/features/discovery/components/catalog-status.tsx:CatalogStatus": {
+      "summary": "Wraps catalog loading and error content in the shared discovery status layout.",
+      "type": "function",
+      "name": "CatalogStatus"
+    },
+    "function:apps/web/src/features/discovery/components/catalog-status.tsx:CatalogLoading": {
+      "summary": "Renders the catalog pending message within the shared status shell.",
+      "type": "function",
+      "name": "CatalogLoading"
+    },
+    "file:apps/web/src/lib/api.ts": {
+      "summary": "Fetches the restaurant catalog through the same-origin API with timeout, cancellation and envelope validation.",
+      "type": "file",
+      "name": "api.ts"
+    },
+    "function:apps/web/src/lib/api.ts:loadRestaurants": {
+      "summary": "Fetches the restaurant catalog through the same-origin API with timeout, cancellation and envelope validation.",
+      "type": "function",
+      "name": "loadRestaurants"
+    },
+    "file:apps/web/src/lib/server/restaurants.ts": {
+      "summary": "Caches server catalog requests using a private backend origin and returns null on unavailable or malformed responses.",
+      "type": "file",
+      "name": "restaurants.ts"
+    },
+    "file:apps/api/src/restaurants/restaurant-query.dto.ts": {
+      "summary": "Validates restaurant list query strings, integer budget bounds, and optional open-status values using transformation and validation decorators.",
+      "type": "file",
+      "name": "restaurant-query.dto.ts"
+    },
+    "class:apps/api/src/restaurants/restaurant-query.dto.ts:RestaurantQueryDto": {
+      "summary": "Defines optional validated search, category, budget, and open-only query fields.",
+      "type": "class",
+      "name": "RestaurantQueryDto"
+    },
+    "file:apps/api/src/restaurants/restaurant.fixtures.ts": {
+      "summary": "Provides six illustrative restaurant listings with menu prices, sample ratings, coordinates, categories, amenities, and image references; these are unverified fixtures.",
+      "type": "file",
+      "name": "restaurant.fixtures.ts"
+    },
+    "file:apps/api/src/restaurants/restaurants.controller.ts": {
+      "summary": "Exposes GET restaurant collection and ID routes, forwarding validated queries and identifiers to the restaurant service.",
+      "type": "file",
+      "name": "restaurants.controller.ts"
+    },
+    "class:apps/api/src/restaurants/restaurants.controller.ts:RestaurantsController": {
+      "summary": "Delegates collection and restaurant-detail HTTP routes to the injected restaurant service.",
+      "type": "class",
+      "name": "RestaurantsController"
+    },
+    "file:apps/api/src/restaurants/restaurants.module.ts": {
+      "summary": "Registers the restaurant controller and service in the NestJS dependency injection module.",
+      "type": "file",
+      "name": "restaurants.module.ts"
+    },
+    "class:apps/api/src/restaurants/restaurants.module.ts:RestaurantsModule": {
+      "summary": "Registers restaurant route handling and catalog service providers.",
+      "type": "class",
+      "name": "RestaurantsModule"
+    },
+    "file:apps/api/src/restaurants/restaurants.service.ts": {
+      "summary": "Filters sample restaurants by accent-insensitive text, shared food-group membership, budget, and open status. Returns sample data envelopes and raises a not-found error for missing identifiers.",
+      "type": "file",
+      "name": "restaurants.service.ts"
+    },
+    "class:apps/api/src/restaurants/restaurants.service.ts:RestaurantsService": {
+      "summary": "Searches and filters restaurant fixtures and returns data envelopes with explicit sample provenance.",
+      "type": "class",
+      "name": "RestaurantsService"
+    },
+    "file:apps/api/src/app.module.ts": {
+      "summary": "Composes the restaurant feature with a health controller reporting API status and sample data provenance.",
+      "type": "file",
+      "name": "app.module.ts"
+    },
+    "class:apps/api/src/app.module.ts:AppModule": {
+      "summary": "Composes restaurant routes and the API health controller.",
+      "type": "class",
+      "name": "AppModule"
+    },
+    "file:apps/api/src/create-app.ts": {
+      "summary": "Creates the NestJS application with the /api prefix, configured CORS origins, strict transforming query validation, and shutdown hooks.",
+      "type": "file",
+      "name": "create-app.ts"
+    },
+    "function:apps/api/src/create-app.ts:createApp": {
+      "summary": "Builds the configured NestJS instance with API routing, CORS, validation, and lifecycle hooks.",
+      "type": "function",
+      "name": "createApp"
+    },
+    "file:apps/api/src/main.ts": {
+      "summary": "Bootstraps the API on environment-controlled host and port, reporting startup failure through stderr and process exit status.",
+      "type": "file",
+      "name": "main.ts"
+    },
+    "config:.playwright-cli/page-2026-10-11T18-04-41-629Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-11T18-04-41-629Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-11T18-05-48-610Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-11T18-05-48-610Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-11T18-06-31-178Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-11T18-06-31-178Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-11T18-08-15-842Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-11T18-08-15-842Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-11T18-10-23-424Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards. Captures the meal filter dialog state.",
+      "type": "config",
+      "name": "page-2026-10-11T18-10-23-424Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-11T18-13-16-927Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-11T18-13-16-927Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-11T18-36-14-451Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-11T18-36-14-451Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-11T19-13-47-740Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-11T19-13-47-740Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-12T03-59-50-440Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-12T03-59-50-440Z.yml"
+    },
+    "config:.playwright-cli/page-2026-10-12T11-47-23-161Z.yml": {
+      "summary": "Generated Playwright accessibility-tree snapshot of the HUST FoodMap discovery interface, including navigation, search and restaurant cards.",
+      "type": "config",
+      "name": "page-2026-10-12T11-47-23-161Z.yml"
+    },
+    "document:AGENTS.md": {
+      "summary": "Documents workspace architecture, server/client boundaries, sample data ownership, desktop layout expectations, and required development verification.",
+      "type": "document",
+      "name": "AGENTS.md"
+    },
+    "document:README.md": {
+      "summary": "Explains the Next.js/React and NestJS workspace architecture, local setup, build commands, restaurant endpoints, environment configuration, and sample-data limitations.",
+      "type": "document",
+      "name": "README.md"
+    },
+    "document:VERIFICATION.md": {
+      "summary": "Records current and historical browser, API, build, accessibility, layout, map, and food-group verification evidence with integration limitations.",
+      "type": "document",
+      "name": "VERIFICATION.md"
+    },
+    "config:package.json": {
+      "summary": "Defines the root npm workspaces, Node engine requirement, coordinated development/start commands, and workspace build, typecheck, and API test scripts.",
+      "type": "config",
+      "name": "package.json"
+    },
+    "config:apps/api/.env.example": {
+      "summary": "Lists sample API listener host/port and allowed development CORS origins.",
+      "type": "config",
+      "name": ".env.example"
+    },
+    "config:apps/api/package.json": {
+      "summary": "Defines NestJS runtime dependencies and TypeScript build/watch scripts, including compiled HTTP tests executed by the Node test runner.",
+      "type": "config",
+      "name": "package.json"
+    },
+    "config:apps/api/tsconfig.json": {
+      "summary": "Configures strict ES2022 CommonJS compilation from src to dist, enabling decorators, emitted decorator metadata, and source maps.",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    "config:apps/web/.env.example": {
+      "summary": "Documents public browser API/map settings and a separate private backend origin for server catalog loading and API rewrites.",
+      "type": "config",
+      "name": ".env.example"
+    },
+    "document:apps/web/AGENTS.md": {
+      "summary": "Contains Next.js-generated guidance to consult bundled version-specific documentation and preserve the automatically maintained agent-rules block.",
+      "type": "document",
+      "name": "AGENTS.md"
+    },
+    "config:apps/web/package.json": {
+      "summary": "Declares Next.js, React, MapLibre, UI dependencies, and asset preparation before development/build; defines frontend serving and typechecking commands.",
+      "type": "config",
+      "name": "package.json"
+    },
+    "config:apps/web/tsconfig.json": {
+      "summary": "Configures strict no-emit frontend typechecking with Bundler resolution, React JSX, Next.js generated types, and the @/* source alias.",
+      "type": "config",
+      "name": "tsconfig.json"
+    },
+    "file:.ua/.understandignore": {
+      "summary": "Self-generated Understand Anything analysis configuration listing suggested ignore patterns for generated output, browser snapshots, vendor assets and tests; all suggested exclusions remain commented out.",
+      "type": "file",
+      "name": ".understandignore"
+    },
+    "config:.ua/config.json": {
+      "summary": "Selects English output for the Understand Anything analysis.",
+      "type": "config",
+      "name": "config.json"
+    },
+    "file:apps/api/test/restaurants.test.cjs": {
+      "summary": "Runs Node integration tests against a compiled NestJS application, covering health, sample catalog envelopes, Vietnamese search, query validation, detail errors and menu-based food grouping.",
+      "type": "file",
+      "name": "restaurants.test.cjs"
+    },
+    "file:apps/web/next-env.d.ts": {
+      "summary": "Generated Next.js type entry point referencing framework image types and generated route and root parameter declarations.",
+      "type": "file",
+      "name": "next-env.d.ts"
+    },
+    "file:apps/web/next.config.ts": {
+      "summary": "Configures the Next.js workspace root and strict rendering, disables branding and development indicators, and proxies API requests to API_INTERNAL_URL or the local NestJS server.",
+      "type": "file",
+      "name": "next.config.ts"
+    },
+    "file:apps/web/postcss.config.mjs": {
+      "summary": "Enables the Tailwind CSS PostCSS plugin for the web build.",
+      "type": "file",
+      "name": "postcss.config.mjs"
+    },
+    "file:apps/web/public/images/optimized/banhmi-128.webp": {
+      "summary": "Generated 128 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "banhmi-128.webp"
+    },
+    "file:apps/web/public/images/optimized/banhmi-256.webp": {
+      "summary": "Generated 256 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "banhmi-256.webp"
+    },
+    "file:apps/web/public/images/optimized/banhmi-512.webp": {
+      "summary": "Generated 512 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "banhmi-512.webp"
+    },
+    "file:apps/web/public/images/optimized/banhmi-768.webp": {
+      "summary": "Generated 768 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "banhmi-768.webp"
+    },
+    "file:apps/web/public/images/optimized/coffee-128.webp": {
+      "summary": "Generated 128 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "coffee-128.webp"
+    },
+    "file:apps/web/public/images/optimized/coffee-256.webp": {
+      "summary": "Generated 256 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "coffee-256.webp"
+    },
+    "file:apps/web/public/images/optimized/coffee-512.webp": {
+      "summary": "Generated 512 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "coffee-512.webp"
+    },
+    "file:apps/web/public/images/optimized/coffee-768.webp": {
+      "summary": "Generated 768 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "coffee-768.webp"
+    },
+    "file:apps/web/public/images/optimized/noodles-128.webp": {
+      "summary": "Generated 128 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "noodles-128.webp"
+    },
+    "file:apps/web/public/images/optimized/noodles-256.webp": {
+      "summary": "Generated 256 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "noodles-256.webp"
+    },
+    "file:apps/web/public/images/optimized/noodles-512.webp": {
+      "summary": "Generated 512 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "noodles-512.webp"
+    },
+    "file:apps/web/public/images/optimized/noodles-768.webp": {
+      "summary": "Generated 768 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "noodles-768.webp"
+    },
+    "file:apps/web/public/images/optimized/pho-128.webp": {
+      "summary": "Generated 128 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "pho-128.webp"
+    },
+    "file:apps/web/public/images/optimized/pho-256.webp": {
+      "summary": "Generated 256 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "pho-256.webp"
+    },
+    "file:apps/web/public/images/optimized/pho-512.webp": {
+      "summary": "Generated 512 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "pho-512.webp"
+    },
+    "file:apps/web/public/images/optimized/pho-768.webp": {
+      "summary": "Generated 768 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "pho-768.webp"
+    },
+    "file:apps/web/public/images/optimized/rice-128.webp": {
+      "summary": "Generated 128 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "rice-128.webp"
+    },
+    "file:apps/web/public/images/optimized/rice-256.webp": {
+      "summary": "Generated 256 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "rice-256.webp"
+    },
+    "file:apps/web/public/images/optimized/rice-512.webp": {
+      "summary": "Generated 512 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "rice-512.webp"
+    },
+    "file:apps/web/public/images/optimized/rice-768.webp": {
+      "summary": "Generated 768 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "rice-768.webp"
+    },
+    "file:apps/web/public/images/optimized/veggie-128.webp": {
+      "summary": "Generated 128 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "veggie-128.webp"
+    },
+    "file:apps/web/public/images/optimized/veggie-256.webp": {
+      "summary": "Generated 256 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "veggie-256.webp"
+    },
+    "file:apps/web/public/images/optimized/veggie-512.webp": {
+      "summary": "Generated 512 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "veggie-512.webp"
+    },
+    "file:apps/web/public/images/optimized/veggie-768.webp": {
+      "summary": "Generated 768 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "type": "file",
+      "name": "veggie-768.webp"
+    },
+    "file:apps/web/public/maplibre-gl-worker.mjs": {
+      "summary": "Copied MapLibre GL vendor worker bundle served from public assets to run map processing outside the UI thread. Minified third-party internals are intentionally omitted from the authored-code graph.",
+      "type": "file",
+      "name": "maplibre-gl-worker.mjs"
+    },
+    "file:apps/web/scripts/prepare-images.mjs": {
+      "summary": "Generates 128, 256, 512 and 768 pixel WebP variants from public JPEG images using Sharp, quality 78 and no enlargement.",
+      "type": "file",
+      "name": "prepare-images.mjs"
+    },
+    "file:apps/web/scripts/prepare-map-worker.mjs": {
+      "summary": "Resolves the installed MapLibre GL worker module and copies it into public assets for browser loading.",
+      "type": "file",
+      "name": "prepare-map-worker.mjs"
+    },
+    "file:apps/web/src/app/food-map.css": {
+      "summary": "Styles map-specific presentation including loading and error states, map overlays, restaurant pins and discovery layout refinements.",
+      "type": "file",
+      "name": "food-map.css"
+    },
+    "file:apps/web/src/app/globals.css": {
+      "summary": "Defines Tailwind integration, light and dark design tokens, application layout, discovery cards, dialogs and responsive interface styling.",
+      "type": "file",
+      "name": "globals.css"
+    },
+    "file:apps/web/src/app/layout.tsx": {
+      "summary": "Provides the Vietnamese Next.js root document, site metadata and viewport configuration while loading typography, MapLibre and application styles.",
+      "type": "file",
+      "name": "layout.tsx"
+    },
+    "function:apps/web/src/app/layout.tsx:RootLayout": {
+      "summary": "Wraps application children in a Vietnamese HTML document and body.",
+      "type": "function",
+      "name": "RootLayout"
+    },
+    "file:apps/web/src/lib/contracts.ts": {
+      "summary": "Re-exports shared restaurant contract types from the workspace contracts package for frontend consumers.",
+      "type": "file",
+      "name": "contracts.ts"
+    },
+    "file:apps/web/tsconfig.tsbuildinfo": {
+      "summary": "Generated TypeScript incremental compilation cache storing compiler state rather than authored application behavior.",
+      "type": "file",
+      "name": "tsconfig.tsbuildinfo"
+    },
+    "file:output/playwright/dark-map-checks.js": {
+      "summary": "Browser regression script checking map and sidebar hover/selection synchronization, details, search, clustering, WCAG auditing and viewport overflow.",
+      "type": "file",
+      "name": "dark-map-checks.js"
+    },
+    "file:output/playwright/desktop-only.js": {
+      "summary": "Checks side-by-side desktop layout across widths, absence of mobile UI, vegetarian selection and browser runtime errors.",
+      "type": "file",
+      "name": "desktop-only.js"
+    },
+    "file:output/playwright/dev-smoke.js": {
+      "summary": "Smoke-checks the development stack health endpoint, default restaurant cards and map pins, then saves a screenshot.",
+      "type": "file",
+      "name": "dev-smoke.js"
+    },
+    "file:output/playwright/edge-checks.js": {
+      "summary": "Exercises denied GPS, expiring persisted visit plans, blocked map workers and responsive/theme controls, preserving discovery when map loading fails.",
+      "type": "file",
+      "name": "edge-checks.js"
+    },
+    "file:output/playwright/filter-edge-checks.js": {
+      "summary": "Checks denied geolocation and retry, unlimited filter defaults, preview count agreement, reset state and quick-filter width.",
+      "type": "file",
+      "name": "filter-edge-checks.js"
+    },
+    "file:output/playwright/filter-location-checks.js": {
+      "summary": "Exercises permitted live geolocation, budget URL state, clearing filters while preserving search, updated walking estimates and accessibility diagnostics.",
+      "type": "file",
+      "name": "filter-location-checks.js"
+    },
+    "file:output/playwright/inspect-migration.js": {
+      "summary": "Inspects selected-pin detail hit testing and sidebar geometry to diagnose interaction and scrolling issues.",
+      "type": "file",
+      "name": "inspect-migration.js"
+    },
+    "file:output/playwright/laptop-fit.js": {
+      "summary": "Checks header, sidebar, selected pin and filter dialog fit across laptop viewports with geolocation enabled, capturing diagnostic screenshots.",
+      "type": "file",
+      "name": "laptop-fit.js"
+    },
+    "config:output/playwright/lighthouse-final.json": {
+      "summary": "Generated Lighthouse 13.5.0 audit report for http://localhost:3001/, containing performance, accessibility and page diagnostic results from 2026-10-11T18:23:31.133Z.",
+      "type": "config",
+      "name": "lighthouse-final.json"
+    },
+    "config:output/playwright/lighthouse.json": {
+      "summary": "Generated Lighthouse 13.5.0 audit report for http://localhost:3001/, containing performance, accessibility and page diagnostic results from 2026-10-11T18:14:13.423Z.",
+      "type": "config",
+      "name": "lighthouse.json"
+    },
+    "file:output/playwright/map-refresh-check.js": {
+      "summary": "Checks that map pins remain available after a delayed wait and reports browser runtime errors.",
+      "type": "file",
+      "name": "map-refresh-check.js"
+    },
+    "file:output/playwright/migration-checks.js": {
+      "summary": "Verifies API-driven discovery, outage and retry behavior, responsive WebP loading and backend restaurant names replacing frontend fixture content.",
+      "type": "file",
+      "name": "migration-checks.js"
+    },
+    "file:output/playwright/next-accessibility.js": {
+      "summary": "Historical browser verification callback auditing WCAG violations with axe, keyboard dialog closure, and selected-pin/mobile-sheet geometry; captures screenshots.",
+      "type": "file",
+      "name": "next-accessibility.js"
+    },
+    "file:output/playwright/next-checks.js": {
+      "summary": "Historical browser regression callback checking category/pin synchronization, URL selection history, deep links, viewport overflow, cluster expansion, and empty search.",
+      "type": "file",
+      "name": "next-checks.js"
+    },
+    "file:output/playwright/next-production.js": {
+      "summary": "Checks production-page availability, proxied restaurant catalog size, selection rendering, and browser errors on localhost:3001, saving a screenshot.",
+      "type": "file",
+      "name": "next-production.js"
+    },
+    "file:output/playwright/rice-filter-check.js": {
+      "summary": "Compares rice search and category results, verifies two map pins, and checks keyboard list scrolling and hidden list/dialog scrollbars.",
+      "type": "file",
+      "name": "rice-filter-check.js"
+    },
+    "file:output/playwright/rice-legacy-catalog.js": {
+      "summary": "Intercepts rendered HTML to remove secondary category metadata and verifies menu-based fallback still includes two rice restaurants.",
+      "type": "file",
+      "name": "rice-legacy-catalog.js"
+    },
+    "file:output/playwright/semi-3d-checks.js": {
+      "summary": "Historical regression callback verifies photo-pin/sidebar hover and selection synchronization, filtering, clustering, detail dialogs, accessibility, and responsive overflow.",
+      "type": "file",
+      "name": "semi-3d-checks.js"
+    },
+    "file:output/playwright/semi-3d-review.js": {
+      "summary": "Captures selected and default marker screenshots after image/animation completion and inspects reduced-motion styles.",
+      "type": "file",
+      "name": "semi-3d-review.js"
+    },
+    "file:output/playwright/sidebar-half.js": {
+      "summary": "Checks result-list height ratios, independent scrolling, crosshair cursors, and absent overflow across laptop viewports using a geolocation-enabled browser context.",
+      "type": "file",
+      "name": "sidebar-half.js"
+    },
+    "file:output/playwright/verify.js": {
+      "summary": "Historical end-to-end browser callback tests filtering, sorting, trial accounts, local favorites, ratings, visit plans, accessibility, and mobile sheet controls.",
+      "type": "file",
+      "name": "verify.js"
+    },
+    "file:output/playwright/zoom-diagnose.js": {
+      "summary": "Captures the zoomed-out map and reports photo-pin, cluster, and sidebar counts for diagnosing coverage.",
+      "type": "file",
+      "name": "zoom-diagnose.js"
+    },
+    "file:output/playwright/zoom-verify.js": {
+      "summary": "Checks OpenFreeMap requests, cluster count and expansion, map-error visibility, attribution, and map screenshots at desktop/mobile sizes.",
+      "type": "file",
+      "name": "zoom-verify.js"
+    },
+    "file:output/refactor-discovery.py": {
+      "summary": "One-off source transformation script moving discovery components into the feature directory and rewriting dynamic imports, navigation, accessibility, and shared-component references.",
+      "type": "file",
+      "name": "refactor-discovery.py"
+    },
+    "file:output/refine-styles.py": {
+      "summary": "One-off CSS transformation script replacing layout overrides with sidebar, marker, map, modal, responsive, and reduced-motion styling rules.",
+      "type": "file",
+      "name": "refine-styles.py"
+    },
+    "file:packages/contracts/food-groups.d.ts": {
+      "summary": "Declares the shared food-group matcher signature using restaurant category, secondary groups, and menu fields.",
+      "type": "file",
+      "name": "food-groups.d.ts"
+    },
+    "file:packages/contracts/food-groups.js": {
+      "summary": "Shares food-group membership logic between API and frontend: accent-normalized explicit groups and whole-phrase dish-name fallback handle combined categories.",
+      "type": "file",
+      "name": "food-groups.js"
+    },
+    "function:packages/contracts/food-groups.js:matchesFoodGroup": {
+      "summary": "Matches normalized explicit food groups or complete dish-name phrases, including alternatives in combined categories.",
+      "type": "function",
+      "name": "matchesFoodGroup"
+    },
+    "file:packages/contracts/index.d.ts": {
+      "summary": "Declares shared restaurant and data-envelope contracts plus future visit-plan, realtime event, and service interfaces; declarations alone do not implement endpoints.",
+      "type": "file",
+      "name": "index.d.ts"
+    },
+    "config:packages/contracts/package.json": {
+      "summary": "Declares the private shared contracts workspace and its index.d.ts type entry point.",
+      "type": "config",
+      "name": "package.json"
+    },
+    "file:tsconfig.tsbuildinfo": {
+      "summary": "Generated TypeScript incremental compilation cache recording compiler inputs and state; it contains no authored application behavior.",
+      "type": "file",
+      "name": "tsconfig.tsbuildinfo"
+    },
+    "function:apps/web/src/lib/server/restaurants.ts:getRestaurantCatalog": {
+      "summary": "Caches an asynchronous server catalog loader that fetches from the private backend origin with an eight-second timeout and returns null on unavailable or invalid data.",
+      "type": "function",
+      "name": "getRestaurantCatalog"
+    }
+  },
+  "totalNodes": 159,
+  "totalEdges": 199
+}

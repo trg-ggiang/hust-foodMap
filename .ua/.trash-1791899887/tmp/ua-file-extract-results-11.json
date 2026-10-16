@@ -1,0 +1,450 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 17,
+  "filesSkipped": [
+    "tsconfig.tsbuildinfo"
+  ],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 17,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 16,
+      "failed": 0,
+      "skipped": 1
+    }
+  },
+  "results": [
+    {
+      "path": "output/playwright/next-accessibility.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 24,
+      "callGraph": [
+        {
+          "caller": "audit",
+          "callee": "page.evaluate",
+          "lineNumber": 3
+        },
+        {
+          "caller": "audit",
+          "callee": "window.axe.run",
+          "lineNumber": 4
+        },
+        {
+          "caller": "audit",
+          "callee": "report.violations.map",
+          "lineNumber": 5
+        },
+        {
+          "caller": "audit",
+          "callee": "v.nodes.map",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/next-checks.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 40,
+      "nonEmptyLines": 40,
+      "callGraph": [
+        {
+          "caller": "check",
+          "callee": "checks.push",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/next-production.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/rice-filter-check.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 23,
+      "callGraph": [
+        {
+          "caller": "names",
+          "callee": "tab.locator('.restaurant-card h2').allTextContents",
+          "lineNumber": 5
+        },
+        {
+          "caller": "names",
+          "callee": "tab.locator",
+          "lineNumber": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/rice-legacy-catalog.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/semi-3d-checks.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 61,
+      "callGraph": [
+        {
+          "caller": "assert",
+          "callee": "checks.push",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/semi-3d-review.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/sidebar-half.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/verify.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 106,
+      "nonEmptyLines": 106,
+      "callGraph": [
+        {
+          "caller": "assert",
+          "callee": "checks.push",
+          "lineNumber": 3
+        },
+        {
+          "caller": "count",
+          "callee": "page.locator('.results-list article').count",
+          "lineNumber": 4
+        },
+        {
+          "caller": "count",
+          "callee": "page.locator",
+          "lineNumber": 4
+        },
+        {
+          "caller": "audit",
+          "callee": "page.evaluate",
+          "lineNumber": 70
+        },
+        {
+          "caller": "audit",
+          "callee": "(await window.axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}})).violations.map",
+          "lineNumber": 70
+        },
+        {
+          "caller": "audit",
+          "callee": "window.axe.run",
+          "lineNumber": 70
+        },
+        {
+          "caller": "audit",
+          "callee": "v.nodes.map",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/zoom-diagnose.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/playwright/zoom-verify.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 29,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/refactor-discovery.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 37,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "output/refine-styles.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 211,
+      "nonEmptyLines": 211,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/contracts/food-groups.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/contracts/food-groups.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "normalizeFoodText",
+          "startLine": 2,
+          "endLine": 5,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "matchesFoodGroup",
+          "startLine": 7,
+          "endLine": 20,
+          "params": [
+            "restaurant",
+            "category"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeFoodText",
+          "callee": "value.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/đ/gi, \"d\").toLowerCase().replace(/[^a-z0-9]+/g, \" \").trim",
+          "lineNumber": 3
+        },
+        {
+          "caller": "normalizeFoodText",
+          "callee": "value.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/đ/gi, \"d\").toLowerCase().replace",
+          "lineNumber": 3
+        },
+        {
+          "caller": "normalizeFoodText",
+          "callee": "value.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace(/đ/gi, \"d\").toLowerCase",
+          "lineNumber": 3
+        },
+        {
+          "caller": "normalizeFoodText",
+          "callee": "value.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\")\n    .replace",
+          "lineNumber": 3
+        },
+        {
+          "caller": "normalizeFoodText",
+          "callee": "value.normalize(\"NFD\").replace",
+          "lineNumber": 3
+        },
+        {
+          "caller": "normalizeFoodText",
+          "callee": "value.normalize",
+          "lineNumber": 3
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "normalizeFoodText",
+          "lineNumber": 8
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "[restaurant.category, ...(restaurant.categories || [])]\n    .some",
+          "lineNumber": 10
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "normalizeFoodText",
+          "lineNumber": 11
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "category.split(\"&\").map(normalizeFoodText).filter",
+          "lineNumber": 15
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "category.split(\"&\").map",
+          "lineNumber": 15
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "category.split",
+          "lineNumber": 15
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "restaurant.menu.some",
+          "lineNumber": 16
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "normalizeFoodText",
+          "lineNumber": 17
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "dishes.some",
+          "lineNumber": 18
+        },
+        {
+          "caller": "matchesFoodGroup",
+          "callee": "name.includes",
+          "lineNumber": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/contracts/index.d.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 86,
+      "nonEmptyLines": 86,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "types",
+          "level": 1,
+          "line": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "nodes": [
+    {
+      "id": "file:apps/web/public/images/optimized/rice-768.webp",
+      "type": "file",
+      "name": "rice-768.webp",
+      "filePath": "apps/web/public/images/optimized/rice-768.webp",
+      "summary": "Generated 768 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+      "tags": [
+        "generated",
+        "image-asset",
+        "responsive-image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/public/images/optimized/veggie-128.webp",
+      "type": "file",
+      "name": "veggie-128.webp",
+      "filePath": "apps/web/public/images/optimized/veggie-128.webp",
+      "summary": "Generated 128 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "tags": [
+        "generated",
+        "image-asset",
+        "responsive-image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/public/images/optimized/veggie-256.webp",
+      "type": "file",
+      "name": "veggie-256.webp",
+      "filePath": "apps/web/public/images/optimized/veggie-256.webp",
+      "summary": "Generated 256 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "tags": [
+        "generated",
+        "image-asset",
+        "responsive-image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/public/images/optimized/veggie-512.webp",
+      "type": "file",
+      "name": "veggie-512.webp",
+      "filePath": "apps/web/public/images/optimized/veggie-512.webp",
+      "summary": "Generated 512 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "tags": [
+        "generated",
+        "image-asset",
+        "responsive-image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/public/images/optimized/veggie-768.webp",
+      "type": "file",
+      "name": "veggie-768.webp",
+      "filePath": "apps/web/public/images/optimized/veggie-768.webp",
+      "summary": "Generated 768 pixel target-width WebP variant for the veggie food photograph, used as a responsive public image asset.",
+      "tags": [
+        "generated",
+        "image-asset",
+        "responsive-image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/public/maplibre-gl-worker.mjs",
+      "type": "file",
+      "name": "maplibre-gl-worker.mjs",
+      "filePath": "apps/web/public/maplibre-gl-worker.mjs",
+      "summary": "Copied MapLibre GL vendor worker bundle served from public assets to run map processing outside the UI thread. Minified third-party internals are intentionally omitted from the authored-code graph.",
+      "tags": [
+        "vendor",
+        "generated",
+        "map-worker"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/web/scripts/prepare-images.mjs",
+      "type": "file",
+      "name": "prepare-images.mjs",
+      "filePath": "apps/web/scripts/prepare-images.mjs",
+      "summary": "Generates 128, 256, 512 and 768 pixel WebP variants from public JPEG images using Sharp, quality 78 and no enlargement.",
+      "tags": [
+        "build-system",
+        "asset-pipeline",
+        "script"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/scripts/prepare-map-worker.mjs",
+      "type": "file",
+      "name": "prepare-map-worker.mjs",
+      "filePath": "apps/web/scripts/prepare-map-worker.mjs",
+      "summary": "Resolves the installed MapLibre GL worker module and copies it into public assets for browser loading.",
+      "tags": [
+        "build-system",
+        "asset-pipeline",
+        "script"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/app/food-map.css",
+      "type": "file",
+      "name": "food-map.css",
+      "filePath": "apps/web/src/app/food-map.css",
+      "summary": "Styles map-specific presentation including loading and error states, map overlays, restaurant pins and discovery layout refinements.",
+      "tags": [
+        "stylesheet",
+        "theme",
+        "responsive-layout"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/web/src/app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "apps/web/src/app/globals.css",
+      "summary": "Defines Tailwind integration, light and dark design tokens, application layout, discovery cards, dialogs and responsive interface styling.",
+      "tags": [
+        "stylesheet",
+        "theme",
+        "responsive-layout"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:apps/web/src/app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "apps/web/src/app/layout.tsx",
+      "summary": "Provides the Vietnamese Next.js root document, site metadata and viewport configuration while loading typography, MapLibre and application styles.",
+      "tags": [
+        "entry-point",
+        "component",
+        "metadata"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:apps/web/src/app/layout.tsx:RootLayout",
+      "type": "function",
+      "name": "RootLayout",
+      "filePath": "apps/web/src/app/layout.tsx",
+      "lineRange": [
+        22,
+        28
+      ],
+      "summary": "Wraps application children in a Vietnamese HTML document and body.",
+      "tags": [
+        "component",
+        "entry-point",
+        "document"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/src/lib/contracts.ts",
+      "type": "file",
+      "name": "contracts.ts",
+      "filePath": "apps/web/src/lib/contracts.ts",
+      "summary": "Re-exports shared restaurant contract types from the workspace contracts package for frontend consumers.",
+      "tags": [
+        "barrel",
+        "type-definition",
+        "contracts"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:apps/web/tsconfig.tsbuildinfo",
+      "type": "file",
+      "name": "tsconfig.tsbuildinfo",
+      "filePath": "apps/web/tsconfig.tsbuildinfo",
+      "summary": "Generated TypeScript incremental compilation cache storing compiler state rather than authored application behavior.",
+      "tags": [
+        "generated",
+        "typescript",
+        "build-system"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:output/playwright/dark-map-checks.js",
+      "type": "file",
+      "name": "dark-map-checks.js",
+      "filePath": "output/playwright/dark-map-checks.js",
+      "summary": "Browser regression script checking map and sidebar hover/selection synchronization, details, search, clustering, WCAG auditing and viewport overflow.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:output/playwright/desktop-only.js",
+      "type": "file",
+      "name": "desktop-only.js",
+      "filePath": "output/playwright/desktop-only.js",
+      "summary": "Checks side-by-side desktop layout across widths, absence of mobile UI, vegetarian selection and browser runtime errors.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:output/playwright/dev-smoke.js",
+      "type": "file",
+      "name": "dev-smoke.js",
+      "filePath": "output/playwright/dev-smoke.js",
+      "summary": "Smoke-checks the development stack health endpoint, default restaurant cards and map pins, then saves a screenshot.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:output/playwright/edge-checks.js",
+      "type": "file",
+      "name": "edge-checks.js",
+      "filePath": "output/playwright/edge-checks.js",
+      "summary": "Exercises denied GPS, expiring persisted visit plans, blocked map workers and responsive/theme controls, preserving discovery when map loading fails.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:output/playwright/filter-edge-checks.js",
+      "type": "file",
+      "name": "filter-edge-checks.js",
+      "filePath": "output/playwright/filter-edge-checks.js",
+      "summary": "Checks denied geolocation and retry, unlimited filter defaults, preview count agreement, reset state and quick-filter width.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:output/playwright/filter-location-checks.js",
+      "type": "file",
+      "name": "filter-location-checks.js",
+      "filePath": "output/playwright/filter-location-checks.js",
+      "summary": "Exercises permitted live geolocation, budget URL state, clearing filters while preserving search, updated walking estimates and accessibility diagnostics.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:output/playwright/inspect-migration.js",
+      "type": "file",
+      "name": "inspect-migration.js",
+      "filePath": "output/playwright/inspect-migration.js",
+      "summary": "Inspects selected-pin detail hit testing and sidebar geometry to diagnose interaction and scrolling issues.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:output/playwright/laptop-fit.js",
+      "type": "file",
+      "name": "laptop-fit.js",
+      "filePath": "output/playwright/laptop-fit.js",
+      "summary": "Checks header, sidebar, selected pin and filter dialog fit across laptop viewports with geolocation enabled, capturing diagnostic screenshots.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:output/playwright/lighthouse-final.json",
+      "type": "config",
+      "name": "lighthouse-final.json",
+      "filePath": "output/playwright/lighthouse-final.json",
+      "summary": "Generated Lighthouse 13.5.0 audit report for http://localhost:3001/, containing performance, accessibility and page diagnostic results from 2026-10-11T18:23:31.133Z.",
+      "tags": [
+        "generated",
+        "audit-report",
+        "performance"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:output/playwright/lighthouse.json",
+      "type": "config",
+      "name": "lighthouse.json",
+      "filePath": "output/playwright/lighthouse.json",
+      "summary": "Generated Lighthouse 13.5.0 audit report for http://localhost:3001/, containing performance, accessibility and page diagnostic results from 2026-10-11T18:14:13.423Z.",
+      "tags": [
+        "generated",
+        "audit-report",
+        "performance"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:output/playwright/map-refresh-check.js",
+      "type": "file",
+      "name": "map-refresh-check.js",
+      "filePath": "output/playwright/map-refresh-check.js",
+      "summary": "Checks that map pins remain available after a delayed wait and reports browser runtime errors.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:output/playwright/migration-checks.js",
+      "type": "file",
+      "name": "migration-checks.js",
+      "filePath": "output/playwright/migration-checks.js",
+      "summary": "Verifies API-driven discovery, outage and retry behavior, responsive WebP loading and backend restaurant names replacing frontend fixture content.",
+      "tags": [
+        "test",
+        "browser-automation",
+        "regression"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:apps/web/src/app/layout.tsx",
+      "target": "file:apps/web/src/app/food-map.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/app/layout.tsx",
+      "target": "file:apps/web/src/app/globals.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:apps/web/src/app/layout.tsx",
+      "target": "function:apps/web/src/app/layout.tsx:RootLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:apps/web/src/app/layout.tsx",
+      "target": "function:apps/web/src/app/layout.tsx:RootLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

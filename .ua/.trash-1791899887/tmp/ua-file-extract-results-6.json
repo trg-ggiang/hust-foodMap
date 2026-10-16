@@ -1,0 +1,237 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 4,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 4
+    }
+  },
+  "results": [
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "HUST FoodMap",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 87,
+      "nonEmptyLines": 61,
+      "sections": [
+        {
+          "heading": "HUST FoodMap — Next.js + React + NestJS",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Cấu trúc",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Chạy development",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Build và kiểm thử",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "API đang hoạt động",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Cấu hình",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Giao diện và phạm vi hiện tại",
+          "level": 2,
+          "line": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "VERIFICATION.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 132,
+      "nonEmptyLines": 94,
+      "sections": [
+        {
+          "heading": "Frontend verification",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Menu-based food group fallback",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Food-group consistency and hidden scrollbars (latest)",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Sidebar space and map pointer update (latest)",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Laptop viewport overflow fix (latest)",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Desktop-only scope update",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Latest filter and live-origin update",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "Next.js + React redesign (current architecture)",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Zoom-out map coverage fix",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Subtle 3D food-pin refinement",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Earlier NestJS + React/Vite migration",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Desktop-first dark map revision",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Build and interaction checks",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Accessibility and visual review",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "Performance",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "Integration limits",
+          "level": 2,
+          "line": 130
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 30,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "engines",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "workspaces",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 12
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    }
+  ]
+}

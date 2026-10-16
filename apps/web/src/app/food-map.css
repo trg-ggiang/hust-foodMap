@@ -1,0 +1,538 @@
+.sidebar-brand {
+  display: none;
+}
+.api-status {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  text-align: center;
+}
+.api-status h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.api-status p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.map-region {
+  background: #18242d;
+}
+.map-workspace,
+.map-canvas {
+  isolation: isolate;
+}
+.map-label,
+:root[data-theme="dark"] .map-label {
+  color: #a0adb6;
+  text-shadow: 0 1px 3px #15212b;
+  pointer-events: none;
+}
+.campus-label {
+  color: #97afa8;
+  letter-spacing: 1.7px;
+}
+.water-label {
+  color: #8eb0c1;
+}
+.map-mode,
+.map-attribution {
+  background: #18242de8;
+  color: #c2cbd3;
+}
+.map-legend {
+  background: #18242de8;
+  color: #c2cbd3;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.food-marker-host {
+  pointer-events: auto;
+}
+.food-pin,
+.active-food-pin,
+.food-cluster {
+  color-scheme: light;
+  color: #263345;
+  background: #fffaf4;
+  border: 2px solid #f6e7d5;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px #0005;
+  position: relative;
+}
+.food-pin,
+.active-food-pin {
+  border-top-color: #fff8ef;
+  border-bottom-color: #d7c3aa;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    inset 0 -2px 0 #c5a77f26,
+    0 2px 4px #08131f20,
+    0 8px 20px #08131f38;
+}
+.food-pin::after,
+.active-food-pin::after,
+.food-cluster::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fffaf4;
+  border-right: 2px solid #f6e7d5;
+  border-bottom: 2px solid #f6e7d5;
+  transform: rotate(45deg);
+  bottom: -8px;
+  left: calc(50% - 6px);
+}
+.food-pin {
+  width: 132px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 3px;
+  text-align: left;
+  transition:
+    transform 180ms cubic-bezier(0.2, 0.7, 0.3, 1),
+    border-color 180ms ease;
+}
+.food-pin > .pin-thumbnail {
+  width: 122px;
+  height: 80px;
+  border-radius: 8px;
+}
+.pin-thumbnail {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  background: #e9dfd1;
+  box-shadow:
+    0 2px 3px #392b1b24,
+    0 4px 8px #392b1b14;
+  transform: translateY(-1px);
+}
+.pin-thumbnail img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+/* Local lighting on the photo surface, with no blur or moving reflection. */
+.pin-thumbnail::before,
+.pin-thumbnail::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.pin-thumbnail::before {
+  background: linear-gradient(
+    125deg,
+    #ffffff30 0%,
+    #ffffff0a 34%,
+    transparent 56%
+  );
+}
+.pin-thumbnail::after {
+  box-shadow:
+    inset 0 1px 1px #ffffffb3,
+    inset 1px 0 0 #ffffff40,
+    inset 0 -1px 1px #38261333;
+}
+.food-pin-name {
+  display: block;
+  max-width: 122px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 7px 2px 4px;
+}
+.food-pin-facts {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px 5px;
+  font-size: 11px;
+}
+.food-pin-facts > span,
+.active-pin-facts > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.food-pin-facts svg,
+.active-pin-facts svg {
+  color: #a3611c;
+}
+.food-pin:hover,
+.food-pin[data-highlight="hover"] {
+  color: #263345;
+  transform: translateY(-3px);
+  border-color: #eeaa62;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    inset 0 -2px 0 #c5a77f26,
+    0 3px 6px #08131f26,
+    0 12px 26px #08131f47,
+    0 0 0 2px #eaa35c30;
+}
+.food-pin[data-highlight="match"] {
+  border-color: #eeaa62;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    inset 0 -2px 0 #c5a77f26,
+    0 8px 20px #08131f38,
+    0 0 0 2px #eaa35c26;
+}
+.active-food-pin {
+  width: 272px;
+  border-color: #e7a263;
+  box-shadow:
+    inset 0 1px 0 #fff,
+    inset 0 -2px 0 #c5a77f33,
+    0 4px 8px #08131f33,
+    0 16px 34px #08131f52,
+    0 0 0 2px #eaa35c38;
+  animation: pin-enter 180ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  transform-origin: center bottom;
+}
+.active-food-pin::after {
+  border-color: #e7a263;
+}
+.active-food-pin > .pin-thumbnail {
+  width: calc(100% - 8px);
+  height: 120px;
+  margin: 4px 4px 0;
+  border-radius: 8px;
+  box-shadow:
+    0 3px 5px #392b1b26,
+    0 6px 12px #392b1b1c;
+}
+.active-pin-close {
+  position: absolute;
+  z-index: 1;
+  right: 7px;
+  top: 7px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fffaf4;
+  color: #263345;
+}
+.active-pin-copy {
+  padding: 12px;
+}
+.active-pin-category {
+  color: #5d645b;
+  font-size: 11px;
+}
+.active-pin-copy h2 {
+  font-size: 15px;
+  margin: 6px 0 10px;
+  line-height: 1.4;
+}
+.active-pin-facts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  gap: 7px;
+}
+.active-pin-facts strong {
+  color: #944912;
+}
+.active-pin-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  margin-top: 12px;
+  padding: 0 12px;
+  border-radius: 7px;
+  background: #20354b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+}
+.active-pin-detail:hover {
+  color: #fff;
+  background: #304a65;
+}
+.food-cluster {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  gap: 5px;
+  font-size: 12px;
+}
+.food-cluster > span:last-child {
+  font-size: 9px;
+  color: #5f6d80;
+}
+.cluster-photos {
+  display: flex;
+  padding-left: 9px;
+}
+.cluster-photos img {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  margin-left: -9px;
+  transform: rotate(-7deg);
+}
+.cluster-photos img + img {
+  transform: rotate(7deg);
+}
+.restaurant-card[data-highlight="hover"] {
+  border-color: #d89b60;
+  box-shadow: 0 0 0 2px #d89b6024;
+}
+.restaurant-card[data-highlight="selected"] {
+  border-color: #d89b60;
+  background: #fff8ef;
+  box-shadow: inset 3px 0 #d89b60;
+}
+:root[data-theme="dark"] .restaurant-card[data-highlight="selected"] {
+  background: #293443;
+}
+.restaurant-card[data-highlight="match"] {
+  border-left-color: #d89b60;
+}
+@keyframes pin-enter {
+  from {
+    opacity: 0.7;
+    transform: translateY(4px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Discovery layout: a contained header, independently scrolling sidebar and map. */
+:root { --sidebar-width: 412px; --accent: #ad581d; --accent-soft: #fff2e4; }
+:root[data-theme="dark"] { --accent: #efb67d; --accent-soft: #3b3029; }
+html, body { font-size: 14px; }
+.app-shell { width: 100%; max-width: 100%; min-width: 0; min-height: 0; }
+.app-header { position: relative; width: 100%; height: 76px; min-width: 0; padding: 0 24px; gap: 24px; }
+.app-header > .brand { width: calc(var(--sidebar-width) - 48px); flex-shrink: 0; }
+.brand { font-size: 22px; letter-spacing: -.8px; }
+.brand small { font-size: 11px; }
+.brand-mark { color: #aa5a25; }
+.main-nav { margin: 0; gap: 4px; align-self: center; padding: 4px; height: 48px; border-radius: 12px; background: var(--canvas); }
+.main-nav > button { height: 40px; padding: 0 17px; font-size: 13px; white-space: nowrap; border-radius: 9px; }
+.main-nav > button.active { color: var(--accent); background: var(--surface); box-shadow: 0 1px 4px #152d5012; }
+.main-nav > button.active::after { display: none; }
+.header-actions { margin-left: auto; flex-shrink: 0; gap: 12px; }
+.student-tag { font-size: 12px; }
+.account-button { height: 40px; font-size: 12px; padding: 0 14px; }
+.workspace { height: auto; min-width: 0; grid-template-columns: var(--sidebar-width) minmax(0, 1fr); }
+.discovery-panel { min-width: 0; box-shadow: 4px 0 24px #0a172514; }
+.discovery-intro { padding: 23px 24px 18px; flex-shrink: 0; }
+.discovery-intro .eyebrow { display: none; }
+.discovery-intro h1 { font-size: 27px; letter-spacing: -.9px; }
+.discovery-intro p { font-size: 12px; white-space: normal; margin-top: 6px; }
+.search-box { height: 48px; margin: 0 24px; background: var(--canvas); border-radius: 11px; flex-shrink: 0; }
+.search-box input { height: 46px; font-size: 14px; background: transparent; }
+.origin-row { margin: 14px 24px; font-size: 12px; flex-shrink: 0; }
+.origin-row select { font-size: 12px; min-height: 28px; max-width: 170px; }
+.quick-filters { margin: 0 24px; gap: 6px; flex-shrink: 0; flex-wrap: nowrap; }
+.chip { min-height: 36px; height: 36px; border-radius: 8px; font-size: 11px; padding: 0 9px; gap: 5px; }
+.filter-trigger { width: 36px; flex-shrink: 0; padding: 0; }
+.quick-filters { gap: 5px; }
+.quick-filters .chip { white-space: nowrap; padding: 0 7px; }
+.quick-filters .filter-trigger { width: auto; min-width: 44px; }
+.quick-filters .clear-filters { width: 36px; flex-shrink: 0; padding: 0; }
+.clear-filters:not(:disabled):hover { color: #a63a2b; background: #fff0ec; }
+.budget-presets { display: flex; gap: 8px; margin: -6px 0 4px; }
+.budget-presets .chip { flex: 1; }
+.open-chip:not(.selected) .status-dot { background: var(--muted); }
+.category-list { padding: 17px 24px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; overflow: visible; }
+.category { min-height: 36px; padding: 6px 8px; font-size: 12px; border-radius: 8px; gap: 6px; background: var(--canvas); }
+.category.active { background: var(--navy); color: var(--surface); }
+.results-heading { padding: 17px 24px 13px; flex-shrink: 0; }
+.results-heading strong { font-size: 14px; }
+.results-heading span { font-size: 11px; margin-top: 4px; }
+.results-heading select { font-size: 11px; min-height: 32px; max-width: 126px; }
+.results-list { padding: 0 14px 14px; scrollbar-gutter: stable; }
+.restaurant-card { margin-bottom: 12px; border-radius: 14px; border-color: var(--border); }
+.card-main { padding: 13px; gap: 13px; align-items: flex-start; }
+.card-main > img { width: 94px; height: 110px; border-radius: 10px; flex-shrink: 0; }
+.card-copy { padding-top: 1px; }
+.card-category { font-size: 11px; margin-bottom: 6px; }
+.card-copy h2 { font-size: 14px; font-weight: 600; line-height: 1.5; max-width: none; padding-right: 18px; margin-bottom: 7px; }
+.restaurant-facts { gap: 7px; font-size: 11px; flex-wrap: wrap; line-height: 1.7; }
+.restaurant-facts .price { width: 100%; font-size: 13px; color: var(--accent); font-weight: 600; }
+.restaurant-facts small { font-size: 10px; }
+.card-status { font-size: 10px; line-height: 1.6; gap: 5px; flex-wrap: wrap; margin-top: 5px; }
+.card-status span + span { padding-left: 6px; }
+.save-button { width: 32px; height: 32px; top: 6px; right: 5px; }
+.card-footer { padding: 9px 13px; font-size: 10px; gap: 8px; background: var(--canvas); line-height: 1.6; }
+.card-footer > span:first-child { max-width: none; }
+.recommendation-reason { display: none; }
+.card-meal-time { font-size: 10px; }
+.card-footer > span:last-child { white-space: nowrap; font-size: 10px; }
+.restaurant-card[data-highlight="selected"] { box-shadow: inset 3px 0 #cc843f; }
+.demo-notice { padding: 10px 18px; min-height: 43px; font-size: 10px; flex-shrink: 0; }
+.demo-notice button { font-size: 11px; min-height: 24px; }
+.map-workspace { overflow: hidden; min-height: 0; }
+.map-topline { top: 22px; left: 24px; right: 88px; pointer-events: none; }
+.area-badge { padding: 9px 12px; border: 1px solid #425765; color: #e0e7eb; background: #1c2b36f5; font-size: 11px; border-radius: 8px; box-shadow: 0 2px 8px #08142120; }
+.area-dot { background: #efb67d; }
+.map-mode { display: none; }
+.time-budget { top: 72px; left: 24px; right: auto; width: auto; max-width: calc(100% - 110px); padding: 10px 12px; gap: 10px; border-radius: 12px; background: #1c2b36f5; border: 1px solid #425765; color: #edf2f5; box-shadow: 0 4px 16px #06142120; }
+.time-budget strong { font-size: 12px; }
+.time-budget span:not(.time-budget-icon) { font-size: 10px; color: #b6c5cf; margin-top: 3px; }
+.time-budget-icon { background: #314754; color: #efb67d; width: 36px; height: 36px; border-radius: 10px; }
+.time-budget select { font-size: 12px; min-height: 36px; margin-left: 8px; background: #314754; color: #edf2f5; border-color: #526776; }
+.map-controls { top: 22px; right: 22px; gap: 10px; }
+.map-controls > button, .zoom-group { width: 42px; background: #fffdf9; color: #263345; border: 1px solid #e6ded4; box-shadow: 0 3px 12px #07152220; border-radius: 10px; }
+.map-controls button { height: 42px; color: #263345; }
+.zoom-group { overflow: hidden; }
+.search-area { top: 148px; font-size: 12px; padding: 11px 17px; border: 1px solid #ebd7c2; color: #824514; background: #fffcf6; box-shadow: 0 4px 14px #0a152533; }
+.layer-info { top: 226px; right: 74px; background: #fffdf9; color: #263345; border: 1px solid #e6ded4; border-radius: 12px; font-size: 13px; }
+.layer-info p { font-size: 12px; }
+.map-hint, .map-selection { display: none; }
+.map-legend { left: 24px; bottom: 24px; font-size: 11px; gap: 8px; border: 1px solid #425765; }
+.legend-price { font-size: 10px; }
+.maplibregl-ctrl-attrib { font-size: 10px; }
+.maplibregl-canvas:focus-visible { outline-offset: -3px; }
+.active-pin-copy h2 { font-weight: 600; font-size: 16px; }
+.active-pin-category { font-size: 11px; }
+.active-pin-facts { font-size: 12px; }
+.active-pin-detail { height: 42px; font-size: 12px; border-radius: 8px; }
+.active-pin-close { width: 36px; height: 36px; }
+.food-pin-name { padding: 8px 3px 5px; }
+.food-pin-facts { padding: 0 3px 6px; font-size: 11px; }
+.food-pin-facts strong { color: #914515; }
+.modal-content { padding: 24px; border-radius: 18px; }
+.modal-content > .muted, .filter-form label, .plan-form label { font-size: 13px; }
+.filter-form select, .plan-form select, .plan-form input { min-height: 44px; font-size: 14px; }
+.primary-button, .secondary-button { min-height: 42px; font-size: 13px; }
+@media (max-width: 1279px) and (min-width: 768px) {
+  :root { --sidebar-width: 364px; }
+  .app-header { padding: 0 18px; gap: 16px; }
+  .app-header > .brand { width: calc(var(--sidebar-width) - 36px); font-size: 20px; }
+  .student-tag { display: none; }
+  .main-nav > button { padding: 0 12px; font-size: 12px; }
+  .discovery-intro, .results-heading { padding-left: 18px; padding-right: 18px; }
+  .search-box, .quick-filters, .origin-row { margin-left: 18px; margin-right: 18px; }
+  .quick-filters { gap: 4px; }
+  .chip { padding: 0 7px; font-size: 10px; }
+  .category-list { padding-left: 18px; padding-right: 18px; }
+  .card-main { padding: 11px; gap: 10px; }
+  .card-main > img { width: 82px; height: 106px; }
+  .card-copy h2 { font-size: 13px; }
+  .card-footer { padding: 8px 11px; }
+  .card-footer > span:last-child { display: none; }
+  .time-budget > div > span { display: none; }
+  .time-budget strong { max-width: 135px; line-height: 1.5; }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  :root { --sidebar-width: 336px; }
+  .main-nav > button { padding: 0 8px; font-size: 11px; }
+  .main-nav > button svg { display: none; }
+  .header-actions { gap: 4px; }
+  .account-button { padding: 0 8px; font-size: 11px; }
+  .category { font-size: 11px; }
+  .chip { padding: 0 6px; gap: 4px; }
+  .chip svg { width: 13px; }
+  .time-budget { left: 16px; padding: 8px; gap: 8px; max-width: calc(100% - 84px); }
+  .time-budget-icon { display: none; }
+  .time-budget select { margin: 0; }
+  .time-budget strong { font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .food-pin { transition: none; }
+  .active-food-pin { animation: none; }
+}
+
+/* Laptop viewports include browser chrome and OS display scaling. */
+@media (max-width: 1440px) {
+  :root { --sidebar-width: clamp(300px, 34vw, 380px); }
+  .app-header { height: 64px; padding: 0 18px; gap: 14px; }
+  .app-header > .brand { width: auto; margin-right: auto; font-size: 20px; }
+  .header-actions { margin-left: auto; gap: 6px; }
+  .student-tag { display: none; }
+  .main-nav { gap: 2px; }
+  .main-nav > button { padding: 0 10px; font-size: 12px; }
+  .quick-filters { flex-wrap: wrap; }
+  .time-budget { left: 16px; right: 76px; max-width: none; gap: 8px; }
+  .time-budget-icon, .time-budget > div > span { display: none; }
+  .time-budget > div { min-width: 0; flex: 1; }
+  .time-budget strong { display: block; font-size: 11px; line-height: 1.5; }
+  .time-budget select { margin-left: 0; min-width: 0; }
+}
+@media (max-width: 900px) {
+  .app-header { height: auto; min-height: 64px; flex-wrap: wrap; padding: 10px 14px; gap: 8px 12px; }
+  .main-nav { order: 3; width: 100%; justify-content: center; height: 40px; }
+  .main-nav > button { height: 32px; flex: 1; }
+  .app-header > .brand { font-size: 18px; }
+  .account-button { padding: 0 8px; }
+  .workspace { grid-template-columns: minmax(0, 44%) minmax(0, 1fr); }
+  .category-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .time-budget { flex-wrap: wrap; }
+  .time-budget select { width: 100%; }
+}
+@media (max-height: 800px) {
+  .discovery-panel { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+  .results-list { flex: none; overflow: visible; min-height: auto; scrollbar-gutter: auto; }
+  .discovery-intro { padding: 16px 18px 12px; }
+  .discovery-intro h1 { font-size: 24px; }
+  .search-box { margin-left: 18px; margin-right: 18px; height: 42px; }
+  .search-box input { height: 40px; }
+  .category-list { padding-top: 12px; padding-bottom: 12px; }
+  .results-heading { padding-top: 12px; padding-bottom: 12px; }
+  .modal-content { max-height: calc(100dvh - 24px); padding: 18px; }
+  .filter-form { gap: 12px; }
+  .modal-actions { position: sticky; bottom: -18px; background: var(--surface); padding: 12px 0; z-index: 1; }
+}
+
+/* Keep the meal-time filter with the other filters, clear of map cards. */
+.discovery-panel .time-budget { position: static; flex-shrink: 0; width: auto; max-width: none; margin: 12px 18px 0; padding: 8px 10px; display: flex; flex-wrap: nowrap; gap: 8px; background: var(--canvas); color: var(--text); border: 1px solid var(--border); box-shadow: none; }
+.discovery-panel .time-budget > div { flex: 1; min-width: 0; }
+.discovery-panel .time-budget strong { font-size: 11px; line-height: 1.5; max-width: none; }
+.discovery-panel .time-budget span:not(.time-budget-icon), .discovery-panel .time-budget-icon { display: none; }
+.discovery-panel .time-budget select { width: auto; max-width: 145px; margin: 0; min-height: 32px; color: var(--text); background: var(--surface); border-color: var(--border); font-size: 11px; }
+@media (max-width: 1440px) {
+  .quick-filters { margin-left: 18px; margin-right: 18px; gap: 4px; }
+  .quick-filters .chip { font-size: 10px; padding: 0 6px; }
+}
+
+/* Reserve at least half the sidebar for the independently scrolling results. */
+.discovery-panel { overflow: hidden; }
+.discovery-controls { flex: 0 1 auto; min-height: 0; max-height: calc(50% - 36px); overflow-y: auto; overflow-x: hidden; scrollbar-width: thin; overscroll-behavior: contain; }
+.discovery-panel .results-list { flex: 1 1 50%; min-height: 50%; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; padding-top: 8px; }
+.discovery-panel .discovery-intro { padding: 12px 18px 8px; }
+.discovery-panel .discovery-intro h1 { font-size: 21px; }
+.discovery-panel .discovery-intro p { display: none; }
+.discovery-controls .search-box { height: 40px; margin: 0 18px 8px; }
+.discovery-controls .search-box input { height: 38px; }
+.discovery-controls .quick-filters { margin: 0 18px; gap: 4px; }
+.discovery-controls .chip { min-height: 32px; height: 32px; }
+.discovery-controls .time-budget { margin-top: 8px; padding: 5px 8px; }
+.discovery-controls .time-budget select { min-height: 28px; }
+.discovery-controls .category-list { padding: 8px 18px; gap: 4px; }
+.discovery-controls .category { min-height: 30px; padding: 4px 6px; }
+.discovery-controls .results-heading { padding: 8px 18px; }
+.discovery-controls .results-heading > div > span { display: none; }
+.discovery-panel .demo-notice { min-height: 36px; height: 36px; padding-top: 6px; padding-bottom: 6px; }
+.map-canvas .maplibregl-canvas-container.maplibregl-interactive { cursor: crosshair; }
+.map-canvas .maplibregl-canvas-container.maplibregl-interactive:active { cursor: grabbing; }
+
+/* Keep scrolling and keyboard access while removing visible scroll tracks. */
+.discovery-controls, .discovery-panel .results-list, .modal-content {
+  scrollbar-width: none;
+  scrollbar-gutter: auto;
+}
+.discovery-controls::-webkit-scrollbar,
+.discovery-panel .results-list::-webkit-scrollbar,
+.modal-content::-webkit-scrollbar { display: none; }

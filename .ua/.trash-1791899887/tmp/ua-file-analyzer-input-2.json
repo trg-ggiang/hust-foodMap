@@ -1,0 +1,73 @@
+{
+    "projectRoot":  "D:/GR2/hust_foodmap",
+    "batchImportData":  {
+                            "apps/web/src/app/error.tsx":  [
+                                                               "apps/web/src/features/discovery/components/catalog-status.tsx"
+                                                           ],
+                            "apps/web/src/app/loading.tsx":  [
+                                                                 "apps/web/src/features/discovery/components/catalog-status.tsx"
+                                                             ],
+                            "apps/web/src/app/page.tsx":  [
+                                                              "apps/web/src/features/discovery/components/catalog-client.tsx",
+                                                              "apps/web/src/lib/server/restaurants.ts"
+                                                          ],
+                            "apps/web/src/features/discovery/components/catalog-client.tsx":  [
+                                                                                                  "apps/web/src/features/discovery/components/catalog-status.tsx",
+                                                                                                  "apps/web/src/features/discovery/components/food-map.tsx",
+                                                                                                  "apps/web/src/lib/api.ts"
+                                                                                              ],
+                            "apps/web/src/features/discovery/components/catalog-status.tsx":  [
+
+                                                                                              ],
+                            "apps/web/src/lib/api.ts":  [
+
+                                                        ],
+                            "apps/web/src/lib/server/restaurants.ts":  [
+
+                                                                       ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  "apps/web/src/app/error.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  17,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/src/app/loading.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  3,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/src/app/page.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  10,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/src/features/discovery/components/catalog-client.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  56,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/src/features/discovery/components/catalog-status.tsx",
+                           "language":  "typescript",
+                           "sizeLines":  20,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/src/lib/api.ts",
+                           "language":  "typescript",
+                           "sizeLines":  18,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "apps/web/src/lib/server/restaurants.ts",
+                           "language":  "typescript",
+                           "sizeLines":  26,
+                           "fileCategory":  "code"
+                       }
+                   ]
+}

@@ -1,0 +1,332 @@
+{
+    "nodes":  [
+                  {
+                      "id":  "file:.ua/.understandignore",
+                      "type":  "file",
+                      "name":  ".understandignore",
+                      "filePath":  ".ua/.understandignore",
+                      "summary":  "Self-generated Understand Anything analysis configuration listing suggested ignore patterns for generated output, browser snapshots, vendor assets and tests; all suggested exclusions remain commented out.",
+                      "tags":  [
+                                   "configuration",
+                                   "build-system",
+                                   "web"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "config:.ua/config.json",
+                      "type":  "config",
+                      "name":  "config.json",
+                      "filePath":  ".ua/config.json",
+                      "summary":  "Selects English output for the Understand Anything analysis.",
+                      "tags":  [
+                                   "configuration",
+                                   "build-system",
+                                   "web"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/api/test/restaurants.test.cjs",
+                      "type":  "file",
+                      "name":  "restaurants.test.cjs",
+                      "filePath":  "apps/api/test/restaurants.test.cjs",
+                      "summary":  "Runs Node integration tests against a compiled NestJS application, covering health, sample catalog envelopes, Vietnamese search, query validation, detail errors and menu-based food grouping.",
+                      "tags":  [
+                                   "test",
+                                   "api",
+                                   "validation"
+                               ],
+                      "complexity":  "moderate"
+                  },
+                  {
+                      "id":  "file:apps/web/next-env.d.ts",
+                      "type":  "file",
+                      "name":  "next-env.d.ts",
+                      "filePath":  "apps/web/next-env.d.ts",
+                      "summary":  "Generated Next.js type entry point referencing framework image types and generated route and root parameter declarations.",
+                      "tags":  [
+                                   "generated",
+                                   "typescript",
+                                   "build-system"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/next.config.ts",
+                      "type":  "file",
+                      "name":  "next.config.ts",
+                      "filePath":  "apps/web/next.config.ts",
+                      "summary":  "Configures the Next.js workspace root and strict rendering, disables branding and development indicators, and proxies API requests to API_INTERNAL_URL or the local NestJS server.",
+                      "tags":  [
+                                   "configuration",
+                                   "build-system",
+                                   "web"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/postcss.config.mjs",
+                      "type":  "file",
+                      "name":  "postcss.config.mjs",
+                      "filePath":  "apps/web/postcss.config.mjs",
+                      "summary":  "Enables the Tailwind CSS PostCSS plugin for the web build.",
+                      "tags":  [
+                                   "configuration",
+                                   "build-system",
+                                   "web"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/banhmi-128.webp",
+                      "type":  "file",
+                      "name":  "banhmi-128.webp",
+                      "filePath":  "apps/web/public/images/optimized/banhmi-128.webp",
+                      "summary":  "Generated 128 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/banhmi-256.webp",
+                      "type":  "file",
+                      "name":  "banhmi-256.webp",
+                      "filePath":  "apps/web/public/images/optimized/banhmi-256.webp",
+                      "summary":  "Generated 256 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/banhmi-512.webp",
+                      "type":  "file",
+                      "name":  "banhmi-512.webp",
+                      "filePath":  "apps/web/public/images/optimized/banhmi-512.webp",
+                      "summary":  "Generated 512 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/banhmi-768.webp",
+                      "type":  "file",
+                      "name":  "banhmi-768.webp",
+                      "filePath":  "apps/web/public/images/optimized/banhmi-768.webp",
+                      "summary":  "Generated 768 pixel target-width WebP variant for the banhmi food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/coffee-128.webp",
+                      "type":  "file",
+                      "name":  "coffee-128.webp",
+                      "filePath":  "apps/web/public/images/optimized/coffee-128.webp",
+                      "summary":  "Generated 128 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/coffee-256.webp",
+                      "type":  "file",
+                      "name":  "coffee-256.webp",
+                      "filePath":  "apps/web/public/images/optimized/coffee-256.webp",
+                      "summary":  "Generated 256 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/coffee-512.webp",
+                      "type":  "file",
+                      "name":  "coffee-512.webp",
+                      "filePath":  "apps/web/public/images/optimized/coffee-512.webp",
+                      "summary":  "Generated 512 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/coffee-768.webp",
+                      "type":  "file",
+                      "name":  "coffee-768.webp",
+                      "filePath":  "apps/web/public/images/optimized/coffee-768.webp",
+                      "summary":  "Generated 768 pixel target-width WebP variant for the coffee food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/noodles-128.webp",
+                      "type":  "file",
+                      "name":  "noodles-128.webp",
+                      "filePath":  "apps/web/public/images/optimized/noodles-128.webp",
+                      "summary":  "Generated 128 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/noodles-256.webp",
+                      "type":  "file",
+                      "name":  "noodles-256.webp",
+                      "filePath":  "apps/web/public/images/optimized/noodles-256.webp",
+                      "summary":  "Generated 256 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/noodles-512.webp",
+                      "type":  "file",
+                      "name":  "noodles-512.webp",
+                      "filePath":  "apps/web/public/images/optimized/noodles-512.webp",
+                      "summary":  "Generated 512 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/noodles-768.webp",
+                      "type":  "file",
+                      "name":  "noodles-768.webp",
+                      "filePath":  "apps/web/public/images/optimized/noodles-768.webp",
+                      "summary":  "Generated 768 pixel target-width WebP variant for the noodles food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/pho-128.webp",
+                      "type":  "file",
+                      "name":  "pho-128.webp",
+                      "filePath":  "apps/web/public/images/optimized/pho-128.webp",
+                      "summary":  "Generated 128 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/pho-256.webp",
+                      "type":  "file",
+                      "name":  "pho-256.webp",
+                      "filePath":  "apps/web/public/images/optimized/pho-256.webp",
+                      "summary":  "Generated 256 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/pho-512.webp",
+                      "type":  "file",
+                      "name":  "pho-512.webp",
+                      "filePath":  "apps/web/public/images/optimized/pho-512.webp",
+                      "summary":  "Generated 512 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/pho-768.webp",
+                      "type":  "file",
+                      "name":  "pho-768.webp",
+                      "filePath":  "apps/web/public/images/optimized/pho-768.webp",
+                      "summary":  "Generated 768 pixel target-width WebP variant for the pho food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/rice-128.webp",
+                      "type":  "file",
+                      "name":  "rice-128.webp",
+                      "filePath":  "apps/web/public/images/optimized/rice-128.webp",
+                      "summary":  "Generated 128 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/rice-256.webp",
+                      "type":  "file",
+                      "name":  "rice-256.webp",
+                      "filePath":  "apps/web/public/images/optimized/rice-256.webp",
+                      "summary":  "Generated 256 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  },
+                  {
+                      "id":  "file:apps/web/public/images/optimized/rice-512.webp",
+                      "type":  "file",
+                      "name":  "rice-512.webp",
+                      "filePath":  "apps/web/public/images/optimized/rice-512.webp",
+                      "summary":  "Generated 512 pixel target-width WebP variant for the rice food photograph, used as a responsive public image asset.",
+                      "tags":  [
+                                   "generated",
+                                   "image-asset",
+                                   "responsive-image"
+                               ],
+                      "complexity":  "simple"
+                  }
+              ],
+    "edges":  [
+
+              ]
+}
