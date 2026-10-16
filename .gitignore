@@ -1,12 +1,56 @@
+# Dependencies (all npm workspaces)
 node_modules/
+
+# Build output and caches
 .next/
-.env.local
+out/
+dist/
+build/
+.turbo/
+.cache/
+.vercel/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local environment and secrets; keep safe example templates
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.sample
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Browser test reports and local tooling artifacts
 output/
 .playwright-cli/
-next-env.d.ts
-*.tsbuildinfo
-public/maplibre-gl-worker.mjs
-apps/web/public/maplibre-gl-worker.mjs
-dist/
-.env
-apps/web/public/images/optimized/
+playwright-report/
+test-results/
+.ua/
+
+# Development assistant files and supporting documentation
+.agents/
+.codex/
+AGENTS.md
+VERIFICATION.md
+/doc/
+/database/README.md
+
+# Generated web assets (recreated by preparation scripts)
+/public/maplibre-gl-worker.mjs
+/apps/web/public/maplibre-gl-worker.mjs
+/apps/web/public/images/optimized/
+
+# Machine-specific editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
